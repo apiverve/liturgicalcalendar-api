@@ -1,0 +1,35 @@
+{
+  "name": "@apiverve/liturgicalcalendar",
+  "version": "1.1.12",
+  "description": "Liturgical Calendar is a simple tool for getting the dates of the Liturgical Calendar. It returns the dates of the Liturgical Calendar for a given year.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "example": "node examples/basic.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/liturgicalcalendar-api.git",
+    "directory": "npm"
+  },
+  "keywords": [
+    "liturgical calendar", "liturgical calendar api", "liturgical calendar tool", "liturgical calendar software", "liturgical calendar service"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/liturgicalcalendar-api/issues"
+  },
+  "homepage": "https://apiverve.com/marketplace/liturgicalcalendar?utm_source=npm",
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "promise": "^8.3.0",
+    "axios": "1.13.2"
+  }
+}
