@@ -12,13 +12,8 @@ public class BasicExample {
         LiturgicalCalendarAPIClient client = new LiturgicalCalendarAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Query parameters
-            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
-        parameters.put(&quot;month&quot;, 02);
-        parameters.put(&quot;year&quot;, 2025);
-
-            // Execute the API request
-            APIResponse response = client.execute(parameters);
+            // Execute the API request (no parameters required)
+            APIResponse response = client.execute(null);
 
             // Check if the request was successful
             if (response.isSuccess()) {
