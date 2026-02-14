@@ -17,14 +17,11 @@ def call_liturgicalcalendar_api():
     Make a GET request to the Liturgical Calendar API
     """
     try:
-        # Query parameters
-        params &#x3D; {&#x27;month&#x27;: 02, &#x27;year&#x27;: 2025}
-
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers, params=params)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
