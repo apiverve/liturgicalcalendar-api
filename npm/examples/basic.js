@@ -15,7 +15,7 @@ const api = new liturgicalcalendarAPI({
 
 // Example query
 var query = {
-  month: 02,
+  month: 2,
   year: 2025
 };
 
