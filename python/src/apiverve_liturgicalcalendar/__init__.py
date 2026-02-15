@@ -1,1 +1,3 @@
-from .apiClient import LiturgicalcalendarAPIClient
+from .apiClient import LiturgicalcalendarAPIClient, LiturgicalcalendarAPIClientError
+
+__all__ = ['LiturgicalcalendarAPIClient', 'LiturgicalcalendarAPIClientError']
