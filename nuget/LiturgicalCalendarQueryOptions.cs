@@ -11,15 +11,13 @@ namespace APIVerve.API.LiturgicalCalendar
     public class LiturgicalCalendarQueryOptions
     {
         /// <summary>
-        /// The two digit month you want to get the Liturgical Calendar data for (default: current month)
-        /// Example: 02
+        /// The month to get Liturgical Calendar data for (default: current month)
         /// </summary>
         [JsonProperty("month")]
         public string Month { get; set; }
 
         /// <summary>
-        /// The 4 digit year you want to get the Liturgical Calendar data for (default: current year)
-        /// Example: 2025
+        /// The year to get Liturgical Calendar data for (default: current year)
         /// </summary>
         [JsonProperty("year")]
         public string Year { get; set; }
