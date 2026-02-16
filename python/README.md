@@ -44,7 +44,10 @@ from apiverve_liturgicalcalendar.apiClient import LiturgicalcalendarAPIClient
 # Initialize the client with your APIVerve API key
 api = LiturgicalcalendarAPIClient("[YOUR_API_KEY]")
 
-query = { "month": 2, "year": 2025 }
+query = {
+    "month": 2,
+    "year": 2025
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "month": 2, "year": 2025 }
+query = {
+    "month": 2,
+    "year": 2025
+}
 ```
 
 ###### Simple Request
@@ -2473,7 +2479,10 @@ from apiverve_liturgicalcalendar.apiClient import LiturgicalcalendarAPIClient, L
 
 api = LiturgicalcalendarAPIClient("[YOUR_API_KEY]")
 
-query = { "month": 2, "year": 2025 }
+query = {
+    "month": 2,
+    "year": 2025
+}
 
 try:
     result = api.execute(query)
@@ -2494,7 +2503,10 @@ from apiverve_liturgicalcalendar.apiClient import LiturgicalcalendarAPIClient, L
 
 api = LiturgicalcalendarAPIClient("[YOUR_API_KEY]")
 
-query = { "month": 2, "year": 2025 }
+query = {
+    "month": 2,
+    "year": 2025
+}
 
 try:
     result = api.execute(query)
@@ -2528,7 +2540,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_liturgicalcalendar.apiClient import LiturgicalcalendarAPIClient, LiturgicalcalendarAPIClientError
 
-query = { "month": 2, "year": 2025 }
+query = {
+    "month": 2,
+    "year": 2025
+}
 
 # Using context manager ensures proper cleanup
 with LiturgicalcalendarAPIClient("[YOUR_API_KEY]") as api:
@@ -2554,7 +2569,10 @@ from apiverve_liturgicalcalendar.apiClient import LiturgicalcalendarAPIClient
 # Enable debug mode
 api = LiturgicalcalendarAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "month": 2, "year": 2025 }
+query = {
+    "month": 2,
+    "year": 2025
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -2569,8 +2587,12 @@ from apiverve_liturgicalcalendar.apiClient import LiturgicalcalendarAPIClient
 
 api = LiturgicalcalendarAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "month": 2,
+    "year": 2025
+}
+
 try:
-    query = { "month": 2, "year": 2025 }
     result = api.execute(query)
     print(result)
 finally:
