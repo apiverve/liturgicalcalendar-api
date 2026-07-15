@@ -4,94 +4,111 @@ declare module '@apiverve/liturgicalcalendar' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface liturgicalcalendarResponse {
     status: string;
     error: string | null;
     data: LiturgicalCalendarData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface LiturgicalCalendarData {
-      the20250301: The20250301[];
-      the20250302: The20250302[];
-      the20250303: The20250301[];
-      the20250304: The20250304[];
-      the20250305: The20250305[];
-      the20250306: The20250306[];
-      the20250307: The2025030[];
-      the20250308: The2025030[];
-      the20250309: The202503[];
-      the20250310: The20250310[];
-      the20250311: The20250310[];
-      the20250312: The20250310[];
-      the20250313: The20250310[];
-      the20250314: The20250310[];
-      the20250315: The20250310[];
-      the20250316: The202503[];
-      the20250317: The2025031[];
-      the20250318: The2025031[];
-      the20250319: The20250319[];
-      the20250320: The20250310[];
-      the20250321: The20250310[];
-      the20250322: The20250310[];
-      the20250323: The202503[];
-      the20250324: The20250310[];
-      the20250325: The20250325[];
-      the20250326: The20250310[];
-      the20250327: The20250310[];
-      the20250328: The20250310[];
-      the20250329: The20250310[];
-      the20250330: The202503[];
-      the20250331: The20250310[];
+      the20251201: The20251201[];
+      the20251202: The20251201[];
+      the20251203: The20251203_Element[];
+      the20251204: The20251204_Element[];
+      the20251205: The20251201[];
+      the20251206: The20251204_Element[];
+      the20251207: The20251207_Element[];
+      the20251208: The20251208[];
+      the20251209: The20251204_Element[];
+      the20251210: The20251204_Element[];
+      the20251211: The20251204_Element[];
+      the20251212: The20251204_Element[];
+      the20251213: The20251203_Element[];
+      the20251214: The20251207_Element[];
+      the20251215: The20251201[];
+      the20251216: The20251201[];
+      the20251217: The20251217[];
+      the20251218: The20251217[];
+      the20251219: The20251217[];
+      the20251220: The20251217[];
+      the20251221: The20251207_Element[];
+      the20251222: The20251217[];
+      the20251223: The20251223[];
+      the20251224: The20251217[];
+      the20251225: The20251225_Element[];
+      the20251226: The20251226_Element[];
+      the20251227: The20251226_Element[];
+      the20251228: The20251225_Element[];
+      the20251229: The20251229_Element[];
+      the20251230: The20251230[];
+      the20251231: The20251229_Element[];
   }
   
-  interface The20250301 {
-      id:                          string;
-      date:                        Date;
-      dateDef:                     The20250301_DateDef;
+  interface The20251201 {
+      id:                          null | string;
+      date:                        Date | null;
+      dateDef:                     The20251201_DateDef;
       dateExceptions:              any[];
       alternativeTransferDateDefs: any[];
-      precedence:                  string;
-      rank:                        Rank;
-      allowSimilarRankItems:       boolean;
-      isHolyDayOfObligation:       boolean;
-      isOptional:                  boolean;
-      i18NDef:                     The20250301_I18NDef[];
-      seasons:                     Season[];
-      periods:                     string[];
-      colors:                      string[];
+      precedence:                  Precedence | null;
+      rank:                        Rank | null;
+      allowSimilarRankItems:       boolean | null;
+      isHolyDayOfObligation:       boolean | null;
+      isOptional:                  boolean | null;
+      i18NDef:                     The20251201_I18NDef[];
+      seasons:                     (Season | null)[];
+      periods:                     any[];
+      colors:                      (Color | null)[];
       commonsDef:                  any[];
       martyrology:                 any[];
       titles:                      any[];
       calendar:                    Calendar;
       cycles:                      Cycles;
-      fromCalendarID:              FromCalendarID;
+      fromCalendarID:              FromCalendarID | null;
       fromExtendedCalendars:       any[];
   }
   
   interface Calendar {
-      weekOfSeason:          number;
-      dayOfSeason:           number;
-      dayOfWeek:             number;
-      nthDayOfWeekInMonth:   number;
-      startOfSeason:         Date;
-      endOfSeason:           Date;
-      startOfLiturgicalYear: Date;
-      endOfLiturgicalYear:   Date;
-      seasons:               Season[];
+      weekOfSeason:          number | null;
+      dayOfSeason:           number | null;
+      dayOfWeek:             number | null;
+      nthDayOfWeekInMonth:   number | null;
+      startOfSeason:         Date | null;
+      endOfSeason:           Date | null;
+      startOfLiturgicalYear: Date | null;
+      endOfLiturgicalYear:   Date | null;
+      seasons:               (Season | null)[];
   }
   
   enum Season {
-      Lent = "LENT",
-      OrdinaryTime = "ORDINARY_TIME",
+      Advent = "ADVENT",
+      ChristmasTime = "CHRISTMAS_TIME",
+  }
+  
+  enum Color {
+      Purple = "PURPLE",
+      White = "WHITE",
   }
   
   interface Cycles {
-      properCycle:  ProperCycle;
-      sundayCycle:  SundayCycle;
-      weekdayCycle: WeekdayCycle;
-      psalterWeek:  PsalterWeek;
+      properCycle:  ProperCycle | null;
+      sundayCycle:  SundayCycle | null;
+      weekdayCycle: WeekdayCycle | null;
+      psalterWeek:  PsalterWeek | null;
   }
   
   enum ProperCycle {
@@ -107,356 +124,342 @@ declare module '@apiverve/liturgicalcalendar' {
   }
   
   enum SundayCycle {
-      YearC = "YEAR_C",
+      YearA = "YEAR_A",
   }
   
   enum WeekdayCycle {
-      Year1 = "YEAR_1",
+      Year2 = "YEAR_2",
   }
   
-  interface The20250301_DateDef {
-      dateFn:     string;
-      dateArgs:   number[];
-      yearOffset: number;
-  }
-  
-  enum FromCalendarID {
-      ProperOfTime = "ProperOfTime",
-  }
-  
-  type The20250301_I18NDef = PurpleI18NDef | string;
-  
-  interface PurpleI18NDef {
-      week: number;
-      dow:  number;
-  }
-  
-  enum Rank {
-      Weekday = "WEEKDAY",
-  }
-  
-  interface The20250302 {
-      id:                          string;
-      date:                        Date;
-      dateDef:                     The20250301_DateDef;
-      dateExceptions:              any[];
-      alternativeTransferDateDefs: any[];
-      precedence:                  string;
-      rank:                        string;
-      allowSimilarRankItems:       boolean;
-      isHolyDayOfObligation:       boolean;
-      isOptional:                  boolean;
-      i18NDef:                     The20250302_I18NDef[];
-      seasons:                     Season[];
-      periods:                     string[];
-      colors:                      string[];
-      commonsDef:                  any[];
-      martyrology:                 any[];
-      titles:                      any[];
-      calendar:                    Calendar;
-      cycles:                      Cycles;
-      fromCalendarID:              FromCalendarID;
-      fromExtendedCalendars:       any[];
-  }
-  
-  type The20250302_I18NDef = FluffyI18NDef | string;
-  
-  interface FluffyI18NDef {
-      week: number;
-  }
-  
-  interface The20250304 {
-      id:                          string;
-      date:                        Date;
-      dateDef:                     The20250304_DateDef;
-      dateExceptions:              any[];
-      alternativeTransferDateDefs: any[];
-      precedence:                  string;
-      rank:                        string;
-      allowSimilarRankItems:       boolean;
-      isHolyDayOfObligation:       boolean;
-      isOptional:                  boolean;
-      i18NDef:                     The20250301_I18NDef[];
-      seasons:                     Season[];
-      periods:                     string[];
-      colors:                      string[];
-      commonsDef:                  string[];
-      martyrology:                 any[];
-      titles:                      any[];
-      calendar:                    Calendar;
-      cycles:                      Cycles;
-      fromCalendarID:              string;
-      fromExtendedCalendars:       any[];
-      weekday?:                    The20250301;
-  }
-  
-  interface The20250304_DateDef {
-      dateFn?:     string;
-      dateArgs?:   number[];
-      yearOffset?: number;
-      month?:      number;
-      date?:       number;
-      addDay?:     number;
-  }
-  
-  interface The20250305 {
-      id:                          string;
-      date:                        Date;
-      dateDef:                     The20250305_DateDef;
-      dateExceptions:              any[];
-      alternativeTransferDateDefs: any[];
-      precedence:                  string;
-      rank:                        Rank;
-      allowSimilarRankItems:       boolean;
-      isHolyDayOfObligation:       boolean;
-      isOptional:                  boolean;
-      i18NDef:                     string[];
-      seasons:                     Season[];
-      periods:                     Period[];
-      colors:                      Color[];
-      commonsDef:                  any[];
-      martyrology:                 any[];
-      titles:                      any[];
-      calendar:                    Calendar;
-      cycles:                      Cycles;
-      fromCalendarID:              FromCalendarID;
-      fromExtendedCalendars:       any[];
-  }
-  
-  enum Color {
-      Purple = "PURPLE",
-  }
-  
-  interface The20250305_DateDef {
-      dateFn:     DateFn;
-      yearOffset: number;
+  interface The20251201_DateDef {
+      dateFn:     DateFn | null;
+      dateArgs:   (number | null)[];
+      yearOffset: number | null;
   }
   
   enum DateFn {
-      AshWednesday = "ashWednesday",
+      PrivilegedWeekdayOfAdvent = "privilegedWeekdayOfAdvent",
+      SundayOfAdvent = "sundayOfAdvent",
+      UnprivilegedWeekdayOfAdvent = "unprivilegedWeekdayOfAdvent",
+      WeekdayWithinOctaveOfChristmas = "weekdayWithinOctaveOfChristmas",
   }
   
-  enum Period {
-      PresentationOfTheLordToHolyThursday = "PRESENTATION_OF_THE_LORD_TO_HOLY_THURSDAY",
+  enum FromCalendarID {
+      Ma = "ma",
+      ProperOfTime = "ProperOfTime",
   }
   
-  interface The20250306 {
-      id:                          string;
-      date:                        Date;
-      dateDef:                     The20250306_DateDef;
-      dateExceptions:              any[];
-      alternativeTransferDateDefs: any[];
-      precedence:                  Precedence;
-      rank:                        Rank;
-      allowSimilarRankItems:       boolean;
-      isHolyDayOfObligation:       boolean;
-      isOptional:                  boolean;
-      i18NDef:                     The20250306_I18NDef[];
-      seasons:                     Season[];
-      periods:                     Period[];
-      colors:                      Color[];
-      commonsDef:                  any[];
-      martyrology:                 any[];
-      titles:                      any[];
-      calendar:                    Calendar;
-      cycles:                      Cycles;
-      fromCalendarID:              FromCalendarID;
-      fromExtendedCalendars:       any[];
+  type The20251201_I18NDef = PurpleI18NDef | I18NDefEnum | null;
+  
+  interface PurpleI18NDef {
+      week: number | null;
+      dow:  number | null;
   }
   
-  interface The20250306_DateDef {
-      dateFn:     DateFn;
-      addDay:     number;
-      yearOffset: number;
-  }
-  
-  type The20250306_I18NDef = TentacledI18NDef | string;
-  
-  interface TentacledI18NDef {
-      dow: number;
+  enum I18NDefEnum {
+      SeasonsAdventWeekday = "seasons:advent.weekday",
   }
   
   enum Precedence {
-      PrivilegedWeekday9 = "PRIVILEGED_WEEKDAY_9",
+      OptionalMemorial12 = "OPTIONAL_MEMORIAL_12",
+      Weekday13 = "WEEKDAY_13",
   }
   
-  interface The2025030 {
-      id:                          string;
-      date:                        Date;
-      dateDef:                     The20250304_DateDef;
+  enum Rank {
+      OptionalMemorial = "OPTIONAL_MEMORIAL",
+      Weekday = "WEEKDAY",
+  }
+  
+  interface The20251203_Element {
+      id:                          null | string;
+      date:                        Date | null;
+      dateDef:                     The20251203_DateDef;
       dateExceptions:              any[];
       alternativeTransferDateDefs: any[];
-      precedence:                  string;
-      rank:                        string;
-      allowSimilarRankItems:       boolean;
-      isHolyDayOfObligation:       boolean;
-      isOptional:                  boolean;
-      i18NDef:                     The20250306_I18NDef[];
-      seasons:                     Season[];
-      periods:                     Period[];
-      colors:                      Color[];
-      commonsDef:                  string[];
+      precedence:                  null | string;
+      rank:                        null | string;
+      allowSimilarRankItems:       boolean | null;
+      isHolyDayOfObligation:       boolean | null;
+      isOptional:                  boolean | null;
+      i18NDef:                     (null | string)[];
+      seasons:                     (Season | null)[];
+      periods:                     any[];
+      colors:                      (null | string)[];
+      commonsDef:                  (null | string)[];
       martyrology:                 any[];
       titles:                      any[];
       calendar:                    Calendar;
       cycles:                      Cycles;
-      fromCalendarID:              string;
+      fromCalendarID:              FromCalendarID | null;
       fromExtendedCalendars:       any[];
-      weekday?:                    The20250306;
+      weekday:                     The20251201;
   }
   
-  interface The202503 {
-      id:                          string;
-      date:                        Date;
-      dateDef:                     The20250306_DateDef;
+  interface The20251203_DateDef {
+      month: number | null;
+      date:  number | null;
+  }
+  
+  interface The20251204_Element {
+      id:                          null | string;
+      date:                        Date | null;
+      dateDef:                     The20251204_DateDef;
       dateExceptions:              any[];
       alternativeTransferDateDefs: any[];
-      precedence:                  string;
-      rank:                        string;
-      allowSimilarRankItems:       boolean;
-      isHolyDayOfObligation:       boolean;
-      isOptional:                  boolean;
-      i18NDef:                     The20250302_I18NDef[];
-      seasons:                     Season[];
-      periods:                     Period[];
-      colors:                      string[];
+      precedence:                  Precedence | null;
+      rank:                        Rank | null;
+      allowSimilarRankItems:       boolean | null;
+      isHolyDayOfObligation:       boolean | null;
+      isOptional:                  boolean | null;
+      i18NDef:                     The20251204_I18NDef[];
+      seasons:                     (Season | null)[];
+      periods:                     any[];
+      colors:                      (Color | null)[];
+      commonsDef:                  (null | string)[];
+      martyrology:                 any[];
+      titles:                      any[];
+      calendar:                    Calendar;
+      cycles:                      Cycles;
+      fromCalendarID:              FromCalendarID | null;
+      fromExtendedCalendars:       any[];
+      weekday?:                    The20251201;
+  }
+  
+  interface The20251204_DateDef {
+      dateFn?:     DateFn | null;
+      dateArgs?:   (number | null)[];
+      yearOffset?: number | null;
+      month?:      number | null;
+      date?:       number | null;
+  }
+  
+  type The20251204_I18NDef = PurpleI18NDef | null | string;
+  
+  interface The20251207_Element {
+      id:                          null | string;
+      date:                        Date | null;
+      dateDef:                     The20251201_DateDef;
+      dateExceptions:              any[];
+      alternativeTransferDateDefs: any[];
+      precedence:                  null | string;
+      rank:                        null | string;
+      allowSimilarRankItems:       boolean | null;
+      isHolyDayOfObligation:       boolean | null;
+      isOptional:                  boolean | null;
+      i18NDef:                     The20251207_I18NDef[];
+      seasons:                     (Season | null)[];
+      periods:                     any[];
+      colors:                      (null | string)[];
       commonsDef:                  any[];
       martyrology:                 any[];
       titles:                      any[];
       calendar:                    Calendar;
       cycles:                      Cycles;
-      fromCalendarID:              FromCalendarID;
+      fromCalendarID:              FromCalendarID | null;
       fromExtendedCalendars:       any[];
   }
   
-  interface The20250310 {
-      id:                          string;
-      date:                        Date;
-      dateDef:                     The20250306_DateDef;
+  type The20251207_I18NDef = FluffyI18NDef | null | string;
+  
+  interface FluffyI18NDef {
+      week: number | null;
+  }
+  
+  interface The20251208 {
+      id:                          null | string;
+      date:                        Date | null;
+      dateDef:                     The20251208_DateDef;
       dateExceptions:              any[];
       alternativeTransferDateDefs: any[];
-      precedence:                  Precedence;
-      rank:                        Rank;
-      allowSimilarRankItems:       boolean;
-      isHolyDayOfObligation:       boolean;
-      isOptional:                  boolean;
-      i18NDef:                     The20250310_I18NDef[];
-      seasons:                     Season[];
-      periods:                     Period[];
-      colors:                      Color[];
+      precedence:                  null | string;
+      rank:                        null | string;
+      allowSimilarRankItems:       boolean | null;
+      isHolyDayOfObligation:       boolean | null;
+      isOptional:                  boolean | null;
+      i18NDef:                     (null | string)[];
+      seasons:                     (Season | null)[];
+      periods:                     any[];
+      colors:                      (Color | null)[];
+      commonsDef:                  (null | string)[];
+      martyrology:                 any[];
+      titles:                      any[];
+      calendar:                    Calendar;
+      cycles:                      Cycles;
+      fromCalendarID:              FromCalendarID | null;
+      fromExtendedCalendars:       any[];
+  }
+  
+  interface The20251208_DateDef {
+      dateFn: null | string;
+  }
+  
+  interface The20251217 {
+      id:                          null | string;
+      date:                        Date | null;
+      dateDef:                     The20251201_DateDef;
+      dateExceptions:              any[];
+      alternativeTransferDateDefs: any[];
+      precedence:                  null | string;
+      rank:                        Rank | null;
+      allowSimilarRankItems:       boolean | null;
+      isHolyDayOfObligation:       boolean | null;
+      isOptional:                  boolean | null;
+      i18NDef:                     The20251217_I18NDef[];
+      seasons:                     (Season | null)[];
+      periods:                     any[];
+      colors:                      (Color | null)[];
       commonsDef:                  any[];
       martyrology:                 any[];
       titles:                      any[];
       calendar:                    Calendar;
       cycles:                      Cycles;
-      fromCalendarID:              FromCalendarID;
+      fromCalendarID:              FromCalendarID | null;
       fromExtendedCalendars:       any[];
   }
   
-  type The20250310_I18NDef = PurpleI18NDef | I18NDefEnum;
+  type The20251217_I18NDef = TentacledI18NDef | null | string;
   
-  enum I18NDefEnum {
-      SeasonsLentWeekday = "seasons:lent.weekday",
+  interface TentacledI18NDef {
+      day: number | null;
   }
   
-  interface The2025031 {
-      id:                          string;
-      date:                        Date;
-      dateDef:                     The20250304_DateDef;
+  interface The20251223 {
+      id:                          null | string;
+      date:                        Date | null;
+      dateDef:                     The20251204_DateDef;
       dateExceptions:              any[];
       alternativeTransferDateDefs: any[];
-      precedence:                  string;
-      rank:                        string;
-      allowSimilarRankItems:       boolean;
-      isHolyDayOfObligation:       boolean;
-      isOptional:                  boolean;
-      i18NDef:                     The20250301_I18NDef[];
-      seasons:                     Season[];
-      periods:                     Period[];
-      colors:                      Color[];
-      commonsDef:                  string[];
+      precedence:                  null | string;
+      rank:                        Rank | null;
+      allowSimilarRankItems:       boolean | null;
+      isHolyDayOfObligation:       boolean | null;
+      isOptional:                  boolean | null;
+      i18NDef:                     The20251217_I18NDef[];
+      seasons:                     (Season | null)[];
+      periods:                     any[];
+      colors:                      (Color | null)[];
+      commonsDef:                  (null | string)[];
       martyrology:                 any[];
       titles:                      any[];
       calendar:                    Calendar;
       cycles:                      Cycles;
-      fromCalendarID:              string;
+      fromCalendarID:              FromCalendarID | null;
       fromExtendedCalendars:       any[];
-      weekday?:                    The20250310;
+      weekday?:                    The20251217;
   }
   
-  interface The20250319 {
-      id:                          string;
-      date:                        Date;
-      dateDef:                     The20250319_DateDef;
-      dateExceptions:              DateException[];
-      alternativeTransferDateDefs: any[];
-      precedence:                  string;
-      rank:                        string;
-      allowSimilarRankItems:       boolean;
-      isHolyDayOfObligation:       boolean;
-      isOptional:                  boolean;
-      i18NDef:                     string[];
-      seasons:                     Season[];
-      periods:                     Period[];
-      colors:                      string[];
-      commonsDef:                  string[];
-      martyrology:                 any[];
-      titles:                      any[];
-      calendar:                    Calendar;
-      cycles:                      Cycles;
-      fromCalendarID:              string;
-      fromExtendedCalendars:       any[];
-  }
-  
-  interface The20250319_DateDef {
-      month: number;
-      date:  number;
-  }
-  
-  interface DateException {
-      ifIsDayOfWeek?: number;
-      setDate:        SetDate;
-      ifIsBetween?:   IfIsBetween;
-  }
-  
-  interface IfIsBetween {
-      from:      DateDef;
-      to:        DateDef;
-      inclusive: boolean;
-  }
-  
-  interface DateDef {
-      dateFn: string;
-  }
-  
-  interface SetDate {
-      addDay?:      number;
-      dateFn?:      string;
-      subtractDay?: number;
-  }
-  
-  interface The20250325 {
-      id:                          string;
-      date:                        Date;
-      dateDef:                     DateDef;
+  interface The20251225_Element {
+      id:                          null | string;
+      date:                        Date | null;
+      dateDef:                     The20251225_DateDef;
       dateExceptions:              any[];
       alternativeTransferDateDefs: any[];
-      precedence:                  string;
-      rank:                        string;
-      allowSimilarRankItems:       boolean;
-      isHolyDayOfObligation:       boolean;
-      isOptional:                  boolean;
-      i18NDef:                     string[];
-      seasons:                     Season[];
-      periods:                     Period[];
-      colors:                      string[];
-      commonsDef:                  string[];
+      precedence:                  null | string;
+      rank:                        null | string;
+      allowSimilarRankItems:       boolean | null;
+      isHolyDayOfObligation:       boolean | null;
+      isOptional:                  boolean | null;
+      i18NDef:                     (null | string)[];
+      seasons:                     (Season | null)[];
+      periods:                     (Period | null)[];
+      colors:                      (Color | null)[];
+      commonsDef:                  any[];
       martyrology:                 any[];
       titles:                      any[];
       calendar:                    Calendar;
       cycles:                      Cycles;
-      fromCalendarID:              string;
+      fromCalendarID:              FromCalendarID | null;
       fromExtendedCalendars:       any[];
+  }
+  
+  interface The20251225_DateDef {
+      dateFn:     null | string;
+      yearOffset: number | null;
+  }
+  
+  enum Period {
+      ChristmasOctave = "CHRISTMAS_OCTAVE",
+      ChristmasToPresentationOfTheLord = "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD",
+  }
+  
+  interface The20251226_Element {
+      id:                          null | string;
+      date:                        Date | null;
+      dateDef:                     The20251203_DateDef;
+      dateExceptions:              any[];
+      alternativeTransferDateDefs: any[];
+      precedence:                  null | string;
+      rank:                        null | string;
+      allowSimilarRankItems:       boolean | null;
+      isHolyDayOfObligation:       boolean | null;
+      isOptional:                  boolean | null;
+      i18NDef:                     (null | string)[];
+      seasons:                     (Season | null)[];
+      periods:                     (Period | null)[];
+      colors:                      (null | string)[];
+      commonsDef:                  (null | string)[];
+      martyrology:                 any[];
+      titles:                      any[];
+      calendar:                    Calendar;
+      cycles:                      Cycles;
+      fromCalendarID:              FromCalendarID | null;
+      fromExtendedCalendars:       any[];
+      weekday:                     The20251230;
+  }
+  
+  interface The20251230 {
+      id:                          null | string;
+      date:                        Date | null;
+      dateDef:                     The20251201_DateDef;
+      dateExceptions:              any[];
+      alternativeTransferDateDefs: any[];
+      precedence:                  null | string;
+      rank:                        Rank | null;
+      allowSimilarRankItems:       boolean | null;
+      isHolyDayOfObligation:       boolean | null;
+      isOptional:                  boolean | null;
+      i18NDef:                     The20251230_I18NDef[];
+      seasons:                     (Season | null)[];
+      periods:                     (Period | null)[];
+      colors:                      (Color | null)[];
+      commonsDef:                  any[];
+      martyrology:                 any[];
+      titles:                      any[];
+      calendar:                    Calendar;
+      cycles:                      Cycles;
+      fromCalendarID:              FromCalendarID | null;
+      fromExtendedCalendars:       any[];
+  }
+  
+  type The20251230_I18NDef = StickyI18NDef | null | string;
+  
+  interface StickyI18NDef {
+      count: number | null;
+  }
+  
+  interface The20251229_Element {
+      id:                          null | string;
+      date:                        Date | null;
+      dateDef:                     The20251204_DateDef;
+      dateExceptions:              any[];
+      alternativeTransferDateDefs: any[];
+      precedence:                  null | string;
+      rank:                        Rank | null;
+      allowSimilarRankItems:       boolean | null;
+      isHolyDayOfObligation:       boolean | null;
+      isOptional:                  boolean | null;
+      i18NDef:                     The20251230_I18NDef[];
+      seasons:                     (Season | null)[];
+      periods:                     (Period | null)[];
+      colors:                      (Color | null)[];
+      commonsDef:                  (null | string)[];
+      martyrology:                 any[];
+      titles:                      any[];
+      calendar:                    Calendar;
+      cycles:                      Cycles;
+      fromCalendarID:              FromCalendarID | null;
+      fromExtendedCalendars:       any[];
+      weekday?:                    The20251230;
   }
 
   export default class liturgicalcalendarWrapper {
