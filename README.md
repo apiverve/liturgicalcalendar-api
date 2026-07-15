@@ -30,7 +30,11 @@ The Liturgical Calendar API provides a simple, reliable way to integrate liturgi
 ```javascript
 async function callLiturgicalCalendarAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/liturgicalcalendar', {
+        const params = new URLSearchParams({
+            month: 2
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/liturgicalcalendar?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +54,7 @@ callLiturgicalCalendarAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/liturgicalcalendar?param=value" \
+curl -X GET "https://api.apiverve.com/v1/liturgicalcalendar?month=2" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,7 +154,7 @@ go get github.com/apiverve/liturgicalcalendar-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +173,7 @@ go get github.com/apiverve/liturgicalcalendar-api/go
 The Liturgical Calendar API is commonly used for:
 
 - **Web Applications** - Add liturgical calendar features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with liturgical calendar capabilities
 - **Data Pipelines** - Process and analyze data at scale
