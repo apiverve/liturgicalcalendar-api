@@ -25,114 +25,117 @@ namespace APIVerve.API.LiturgicalCalendar
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
-        [JsonProperty("2025-03-01")]
-        public The20250301[] The20250301 { get; set; }
+        [JsonProperty("2025-12-01")]
+        public The20251201[] The20251201 { get; set; }
 
-        [JsonProperty("2025-03-02")]
-        public The20250302[] The20250302 { get; set; }
+        [JsonProperty("2025-12-02")]
+        public The20251201[] The20251202 { get; set; }
 
-        [JsonProperty("2025-03-03")]
-        public The20250301[] The20250303 { get; set; }
+        [JsonProperty("2025-12-03")]
+        public The20251203_Element[] The20251203 { get; set; }
 
-        [JsonProperty("2025-03-04")]
-        public The20250304[] The20250304 { get; set; }
+        [JsonProperty("2025-12-04")]
+        public The20251204_Element[] The20251204 { get; set; }
 
-        [JsonProperty("2025-03-05")]
-        public The20250305[] The20250305 { get; set; }
+        [JsonProperty("2025-12-05")]
+        public The20251201[] The20251205 { get; set; }
 
-        [JsonProperty("2025-03-06")]
-        public The20250306[] The20250306 { get; set; }
+        [JsonProperty("2025-12-06")]
+        public The20251204_Element[] The20251206 { get; set; }
 
-        [JsonProperty("2025-03-07")]
-        public The2025030[] The20250307 { get; set; }
+        [JsonProperty("2025-12-07")]
+        public The20251207_Element[] The20251207 { get; set; }
 
-        [JsonProperty("2025-03-08")]
-        public The2025030[] The20250308 { get; set; }
+        [JsonProperty("2025-12-08")]
+        public The20251208[] The20251208 { get; set; }
 
-        [JsonProperty("2025-03-09")]
-        public The202503[] The20250309 { get; set; }
+        [JsonProperty("2025-12-09")]
+        public The20251204_Element[] The20251209 { get; set; }
 
-        [JsonProperty("2025-03-10")]
-        public The20250310[] The20250310 { get; set; }
+        [JsonProperty("2025-12-10")]
+        public The20251204_Element[] The20251210 { get; set; }
 
-        [JsonProperty("2025-03-11")]
-        public The20250310[] The20250311 { get; set; }
+        [JsonProperty("2025-12-11")]
+        public The20251204_Element[] The20251211 { get; set; }
 
-        [JsonProperty("2025-03-12")]
-        public The20250310[] The20250312 { get; set; }
+        [JsonProperty("2025-12-12")]
+        public The20251204_Element[] The20251212 { get; set; }
 
-        [JsonProperty("2025-03-13")]
-        public The20250310[] The20250313 { get; set; }
+        [JsonProperty("2025-12-13")]
+        public The20251203_Element[] The20251213 { get; set; }
 
-        [JsonProperty("2025-03-14")]
-        public The20250310[] The20250314 { get; set; }
+        [JsonProperty("2025-12-14")]
+        public The20251207_Element[] The20251214 { get; set; }
 
-        [JsonProperty("2025-03-15")]
-        public The20250310[] The20250315 { get; set; }
+        [JsonProperty("2025-12-15")]
+        public The20251201[] The20251215 { get; set; }
 
-        [JsonProperty("2025-03-16")]
-        public The202503[] The20250316 { get; set; }
+        [JsonProperty("2025-12-16")]
+        public The20251201[] The20251216 { get; set; }
 
-        [JsonProperty("2025-03-17")]
-        public The2025031[] The20250317 { get; set; }
+        [JsonProperty("2025-12-17")]
+        public The20251217[] The20251217 { get; set; }
 
-        [JsonProperty("2025-03-18")]
-        public The2025031[] The20250318 { get; set; }
+        [JsonProperty("2025-12-18")]
+        public The20251217[] The20251218 { get; set; }
 
-        [JsonProperty("2025-03-19")]
-        public The20250319[] The20250319 { get; set; }
+        [JsonProperty("2025-12-19")]
+        public The20251217[] The20251219 { get; set; }
 
-        [JsonProperty("2025-03-20")]
-        public The20250310[] The20250320 { get; set; }
+        [JsonProperty("2025-12-20")]
+        public The20251217[] The20251220 { get; set; }
 
-        [JsonProperty("2025-03-21")]
-        public The20250310[] The20250321 { get; set; }
+        [JsonProperty("2025-12-21")]
+        public The20251207_Element[] The20251221 { get; set; }
 
-        [JsonProperty("2025-03-22")]
-        public The20250310[] The20250322 { get; set; }
+        [JsonProperty("2025-12-22")]
+        public The20251217[] The20251222 { get; set; }
 
-        [JsonProperty("2025-03-23")]
-        public The202503[] The20250323 { get; set; }
+        [JsonProperty("2025-12-23")]
+        public The20251223[] The20251223 { get; set; }
 
-        [JsonProperty("2025-03-24")]
-        public The20250310[] The20250324 { get; set; }
+        [JsonProperty("2025-12-24")]
+        public The20251217[] The20251224 { get; set; }
 
-        [JsonProperty("2025-03-25")]
-        public The20250325[] The20250325 { get; set; }
+        [JsonProperty("2025-12-25")]
+        public The20251225_Element[] The20251225 { get; set; }
 
-        [JsonProperty("2025-03-26")]
-        public The20250310[] The20250326 { get; set; }
+        [JsonProperty("2025-12-26")]
+        public The20251226_Element[] The20251226 { get; set; }
 
-        [JsonProperty("2025-03-27")]
-        public The20250310[] The20250327 { get; set; }
+        [JsonProperty("2025-12-27")]
+        public The20251226_Element[] The20251227 { get; set; }
 
-        [JsonProperty("2025-03-28")]
-        public The20250310[] The20250328 { get; set; }
+        [JsonProperty("2025-12-28")]
+        public The20251225_Element[] The20251228 { get; set; }
 
-        [JsonProperty("2025-03-29")]
-        public The20250310[] The20250329 { get; set; }
+        [JsonProperty("2025-12-29")]
+        public The20251229_Element[] The20251229 { get; set; }
 
-        [JsonProperty("2025-03-30")]
-        public The202503[] The20250330 { get; set; }
+        [JsonProperty("2025-12-30")]
+        public The20251230[] The20251230 { get; set; }
 
-        [JsonProperty("2025-03-31")]
-        public The20250310[] The20250331 { get; set; }
+        [JsonProperty("2025-12-31")]
+        public The20251229_Element[] The20251231 { get; set; }
     }
 
-    public partial class The20250301
+    public partial class The20251201
     {
         [JsonProperty("id")]
         public string Id { get; set; }
 
         [JsonProperty("date")]
-        public DateTimeOffset Date { get; set; }
+        public DateTimeOffset? Date { get; set; }
 
         [JsonProperty("dateDef")]
-        public The20250301_DateDef DateDef { get; set; }
+        public The20251201_DateDef DateDef { get; set; }
 
         [JsonProperty("dateExceptions")]
         public object[] DateExceptions { get; set; }
@@ -141,31 +144,31 @@ namespace APIVerve.API.LiturgicalCalendar
         public object[] AlternativeTransferDateDefs { get; set; }
 
         [JsonProperty("precedence")]
-        public string Precedence { get; set; }
+        public Precedence? Precedence { get; set; }
 
         [JsonProperty("rank")]
-        public Rank Rank { get; set; }
+        public Rank? Rank { get; set; }
 
         [JsonProperty("allowSimilarRankItems")]
-        public bool AllowSimilarRankItems { get; set; }
+        public bool? AllowSimilarRankItems { get; set; }
 
         [JsonProperty("isHolyDayOfObligation")]
-        public bool IsHolyDayOfObligation { get; set; }
+        public bool? IsHolyDayOfObligation { get; set; }
 
         [JsonProperty("isOptional")]
-        public bool IsOptional { get; set; }
+        public bool? IsOptional { get; set; }
 
         [JsonProperty("i18nDef")]
-        public The20250301_I18NDef[] I18NDef { get; set; }
+        public The20251201_I18NDef[] I18NDef { get; set; }
 
         [JsonProperty("seasons")]
-        public Season[] Seasons { get; set; }
+        public Season?[] Seasons { get; set; }
 
         [JsonProperty("periods")]
-        public string[] Periods { get; set; }
+        public object[] Periods { get; set; }
 
         [JsonProperty("colors")]
-        public string[] Colors { get; set; }
+        public Color?[] Colors { get; set; }
 
         [JsonProperty("commonsDef")]
         public object[] CommonsDef { get; set; }
@@ -183,7 +186,7 @@ namespace APIVerve.API.LiturgicalCalendar
         public Cycles Cycles { get; set; }
 
         [JsonProperty("fromCalendarId")]
-        public FromCalendarId FromCalendarId { get; set; }
+        public FromCalendarId? FromCalendarId { get; set; }
 
         [JsonProperty("fromExtendedCalendars")]
         public object[] FromExtendedCalendars { get; set; }
@@ -192,79 +195,79 @@ namespace APIVerve.API.LiturgicalCalendar
     public partial class Calendar
     {
         [JsonProperty("weekOfSeason")]
-        public long WeekOfSeason { get; set; }
+        public long? WeekOfSeason { get; set; }
 
         [JsonProperty("dayOfSeason")]
-        public long DayOfSeason { get; set; }
+        public long? DayOfSeason { get; set; }
 
         [JsonProperty("dayOfWeek")]
-        public long DayOfWeek { get; set; }
+        public long? DayOfWeek { get; set; }
 
         [JsonProperty("nthDayOfWeekInMonth")]
-        public long NthDayOfWeekInMonth { get; set; }
+        public long? NthDayOfWeekInMonth { get; set; }
 
         [JsonProperty("startOfSeason")]
-        public DateTimeOffset StartOfSeason { get; set; }
+        public DateTimeOffset? StartOfSeason { get; set; }
 
         [JsonProperty("endOfSeason")]
-        public DateTimeOffset EndOfSeason { get; set; }
+        public DateTimeOffset? EndOfSeason { get; set; }
 
         [JsonProperty("startOfLiturgicalYear")]
-        public DateTimeOffset StartOfLiturgicalYear { get; set; }
+        public DateTimeOffset? StartOfLiturgicalYear { get; set; }
 
         [JsonProperty("endOfLiturgicalYear")]
-        public DateTimeOffset EndOfLiturgicalYear { get; set; }
+        public DateTimeOffset? EndOfLiturgicalYear { get; set; }
 
         [JsonProperty("seasons")]
-        public Season[] Seasons { get; set; }
+        public Season?[] Seasons { get; set; }
     }
 
     public partial class Cycles
     {
         [JsonProperty("properCycle")]
-        public ProperCycle ProperCycle { get; set; }
+        public ProperCycle? ProperCycle { get; set; }
 
         [JsonProperty("sundayCycle")]
-        public SundayCycle SundayCycle { get; set; }
+        public SundayCycle? SundayCycle { get; set; }
 
         [JsonProperty("weekdayCycle")]
-        public WeekdayCycle WeekdayCycle { get; set; }
+        public WeekdayCycle? WeekdayCycle { get; set; }
 
         [JsonProperty("psalterWeek")]
-        public PsalterWeek PsalterWeek { get; set; }
+        public PsalterWeek? PsalterWeek { get; set; }
     }
 
-    public partial class The20250301_DateDef
+    public partial class The20251201_DateDef
     {
         [JsonProperty("dateFn")]
-        public string DateFn { get; set; }
+        public DateFn? DateFn { get; set; }
 
         [JsonProperty("dateArgs")]
-        public long[] DateArgs { get; set; }
+        public long?[] DateArgs { get; set; }
 
         [JsonProperty("yearOffset")]
-        public long YearOffset { get; set; }
+        public long? YearOffset { get; set; }
     }
 
     public partial class PurpleI18NDef
     {
         [JsonProperty("week")]
-        public long Week { get; set; }
+        public long? Week { get; set; }
 
         [JsonProperty("dow")]
-        public long Dow { get; set; }
+        public long? Dow { get; set; }
     }
 
-    public partial class The20250302
+    public partial class The20251203_Element
     {
         [JsonProperty("id")]
         public string Id { get; set; }
 
         [JsonProperty("date")]
-        public DateTimeOffset Date { get; set; }
+        public DateTimeOffset? Date { get; set; }
 
         [JsonProperty("dateDef")]
-        public The20250301_DateDef DateDef { get; set; }
+        public The20251203_DateDef DateDef { get; set; }
 
         [JsonProperty("dateExceptions")]
         public object[] DateExceptions { get; set; }
@@ -279,22 +282,187 @@ namespace APIVerve.API.LiturgicalCalendar
         public string Rank { get; set; }
 
         [JsonProperty("allowSimilarRankItems")]
-        public bool AllowSimilarRankItems { get; set; }
+        public bool? AllowSimilarRankItems { get; set; }
 
         [JsonProperty("isHolyDayOfObligation")]
-        public bool IsHolyDayOfObligation { get; set; }
+        public bool? IsHolyDayOfObligation { get; set; }
 
         [JsonProperty("isOptional")]
-        public bool IsOptional { get; set; }
+        public bool? IsOptional { get; set; }
 
         [JsonProperty("i18nDef")]
-        public The20250302_I18NDef[] I18NDef { get; set; }
+        public string[] I18NDef { get; set; }
 
         [JsonProperty("seasons")]
-        public Season[] Seasons { get; set; }
+        public Season?[] Seasons { get; set; }
 
         [JsonProperty("periods")]
-        public string[] Periods { get; set; }
+        public object[] Periods { get; set; }
+
+        [JsonProperty("colors")]
+        public string[] Colors { get; set; }
+
+        [JsonProperty("commonsDef")]
+        public string[] CommonsDef { get; set; }
+
+        [JsonProperty("martyrology")]
+        public object[] Martyrology { get; set; }
+
+        [JsonProperty("titles")]
+        public object[] Titles { get; set; }
+
+        [JsonProperty("calendar")]
+        public Calendar Calendar { get; set; }
+
+        [JsonProperty("cycles")]
+        public Cycles Cycles { get; set; }
+
+        [JsonProperty("fromCalendarId")]
+        public FromCalendarId? FromCalendarId { get; set; }
+
+        [JsonProperty("fromExtendedCalendars")]
+        public object[] FromExtendedCalendars { get; set; }
+
+        [JsonProperty("weekday")]
+        public The20251201 Weekday { get; set; }
+    }
+
+    public partial class The20251203_DateDef
+    {
+        [JsonProperty("month")]
+        public long? Month { get; set; }
+
+        [JsonProperty("date")]
+        public long? Date { get; set; }
+    }
+
+    public partial class The20251204_Element
+    {
+        [JsonProperty("id")]
+        public string Id { get; set; }
+
+        [JsonProperty("date")]
+        public DateTimeOffset? Date { get; set; }
+
+        [JsonProperty("dateDef")]
+        public The20251204_DateDef DateDef { get; set; }
+
+        [JsonProperty("dateExceptions")]
+        public object[] DateExceptions { get; set; }
+
+        [JsonProperty("alternativeTransferDateDefs")]
+        public object[] AlternativeTransferDateDefs { get; set; }
+
+        [JsonProperty("precedence")]
+        public Precedence? Precedence { get; set; }
+
+        [JsonProperty("rank")]
+        public Rank? Rank { get; set; }
+
+        [JsonProperty("allowSimilarRankItems")]
+        public bool? AllowSimilarRankItems { get; set; }
+
+        [JsonProperty("isHolyDayOfObligation")]
+        public bool? IsHolyDayOfObligation { get; set; }
+
+        [JsonProperty("isOptional")]
+        public bool? IsOptional { get; set; }
+
+        [JsonProperty("i18nDef")]
+        public The20251204_I18NDef[] I18NDef { get; set; }
+
+        [JsonProperty("seasons")]
+        public Season?[] Seasons { get; set; }
+
+        [JsonProperty("periods")]
+        public object[] Periods { get; set; }
+
+        [JsonProperty("colors")]
+        public Color?[] Colors { get; set; }
+
+        [JsonProperty("commonsDef")]
+        public string[] CommonsDef { get; set; }
+
+        [JsonProperty("martyrology")]
+        public object[] Martyrology { get; set; }
+
+        [JsonProperty("titles")]
+        public object[] Titles { get; set; }
+
+        [JsonProperty("calendar")]
+        public Calendar Calendar { get; set; }
+
+        [JsonProperty("cycles")]
+        public Cycles Cycles { get; set; }
+
+        [JsonProperty("fromCalendarId")]
+        public FromCalendarId? FromCalendarId { get; set; }
+
+        [JsonProperty("fromExtendedCalendars")]
+        public object[] FromExtendedCalendars { get; set; }
+
+        [JsonProperty("weekday", NullValueHandling = NullValueHandling.Ignore)]
+        public The20251201 Weekday { get; set; }
+    }
+
+    public partial class The20251204_DateDef
+    {
+        [JsonProperty("dateFn")]
+        public DateFn? DateFn { get; set; }
+
+        [JsonProperty("dateArgs", NullValueHandling = NullValueHandling.Ignore)]
+        public long?[] DateArgs { get; set; }
+
+        [JsonProperty("yearOffset")]
+        public long? YearOffset { get; set; }
+
+        [JsonProperty("month")]
+        public long? Month { get; set; }
+
+        [JsonProperty("date")]
+        public long? Date { get; set; }
+    }
+
+    public partial class The20251207_Element
+    {
+        [JsonProperty("id")]
+        public string Id { get; set; }
+
+        [JsonProperty("date")]
+        public DateTimeOffset? Date { get; set; }
+
+        [JsonProperty("dateDef")]
+        public The20251201_DateDef DateDef { get; set; }
+
+        [JsonProperty("dateExceptions")]
+        public object[] DateExceptions { get; set; }
+
+        [JsonProperty("alternativeTransferDateDefs")]
+        public object[] AlternativeTransferDateDefs { get; set; }
+
+        [JsonProperty("precedence")]
+        public string Precedence { get; set; }
+
+        [JsonProperty("rank")]
+        public string Rank { get; set; }
+
+        [JsonProperty("allowSimilarRankItems")]
+        public bool? AllowSimilarRankItems { get; set; }
+
+        [JsonProperty("isHolyDayOfObligation")]
+        public bool? IsHolyDayOfObligation { get; set; }
+
+        [JsonProperty("isOptional")]
+        public bool? IsOptional { get; set; }
+
+        [JsonProperty("i18nDef")]
+        public The20251207_I18NDef[] I18NDef { get; set; }
+
+        [JsonProperty("seasons")]
+        public Season?[] Seasons { get; set; }
+
+        [JsonProperty("periods")]
+        public object[] Periods { get; set; }
 
         [JsonProperty("colors")]
         public string[] Colors { get; set; }
@@ -315,7 +483,7 @@ namespace APIVerve.API.LiturgicalCalendar
         public Cycles Cycles { get; set; }
 
         [JsonProperty("fromCalendarId")]
-        public FromCalendarId FromCalendarId { get; set; }
+        public FromCalendarId? FromCalendarId { get; set; }
 
         [JsonProperty("fromExtendedCalendars")]
         public object[] FromExtendedCalendars { get; set; }
@@ -324,19 +492,19 @@ namespace APIVerve.API.LiturgicalCalendar
     public partial class FluffyI18NDef
     {
         [JsonProperty("week")]
-        public long Week { get; set; }
+        public long? Week { get; set; }
     }
 
-    public partial class The20250304
+    public partial class The20251208
     {
         [JsonProperty("id")]
         public string Id { get; set; }
 
         [JsonProperty("date")]
-        public DateTimeOffset Date { get; set; }
+        public DateTimeOffset? Date { get; set; }
 
         [JsonProperty("dateDef")]
-        public The20250304_DateDef DateDef { get; set; }
+        public The20251208_DateDef DateDef { get; set; }
 
         [JsonProperty("dateExceptions")]
         public object[] DateExceptions { get; set; }
@@ -351,25 +519,25 @@ namespace APIVerve.API.LiturgicalCalendar
         public string Rank { get; set; }
 
         [JsonProperty("allowSimilarRankItems")]
-        public bool AllowSimilarRankItems { get; set; }
+        public bool? AllowSimilarRankItems { get; set; }
 
         [JsonProperty("isHolyDayOfObligation")]
-        public bool IsHolyDayOfObligation { get; set; }
+        public bool? IsHolyDayOfObligation { get; set; }
 
         [JsonProperty("isOptional")]
-        public bool IsOptional { get; set; }
+        public bool? IsOptional { get; set; }
 
         [JsonProperty("i18nDef")]
-        public The20250301_I18NDef[] I18NDef { get; set; }
+        public string[] I18NDef { get; set; }
 
         [JsonProperty("seasons")]
-        public Season[] Seasons { get; set; }
+        public Season?[] Seasons { get; set; }
 
         [JsonProperty("periods")]
-        public string[] Periods { get; set; }
+        public object[] Periods { get; set; }
 
         [JsonProperty("colors")]
-        public string[] Colors { get; set; }
+        public Color?[] Colors { get; set; }
 
         [JsonProperty("commonsDef")]
         public string[] CommonsDef { get; set; }
@@ -387,46 +555,28 @@ namespace APIVerve.API.LiturgicalCalendar
         public Cycles Cycles { get; set; }
 
         [JsonProperty("fromCalendarId")]
-        public string FromCalendarId { get; set; }
+        public FromCalendarId? FromCalendarId { get; set; }
 
         [JsonProperty("fromExtendedCalendars")]
         public object[] FromExtendedCalendars { get; set; }
-
-        [JsonProperty("weekday", NullValueHandling = NullValueHandling.Ignore)]
-        public The20250301 Weekday { get; set; }
     }
 
-    public partial class The20250304_DateDef
+    public partial class The20251208_DateDef
     {
-        [JsonProperty("dateFn", NullValueHandling = NullValueHandling.Ignore)]
+        [JsonProperty("dateFn")]
         public string DateFn { get; set; }
-
-        [JsonProperty("dateArgs", NullValueHandling = NullValueHandling.Ignore)]
-        public long[] DateArgs { get; set; }
-
-        [JsonProperty("yearOffset", NullValueHandling = NullValueHandling.Ignore)]
-        public long? YearOffset { get; set; }
-
-        [JsonProperty("month", NullValueHandling = NullValueHandling.Ignore)]
-        public long? Month { get; set; }
-
-        [JsonProperty("date", NullValueHandling = NullValueHandling.Ignore)]
-        public long? Date { get; set; }
-
-        [JsonProperty("addDay", NullValueHandling = NullValueHandling.Ignore)]
-        public long? AddDay { get; set; }
     }
 
-    public partial class The20250305
+    public partial class The20251217
     {
         [JsonProperty("id")]
         public string Id { get; set; }
 
         [JsonProperty("date")]
-        public DateTimeOffset Date { get; set; }
+        public DateTimeOffset? Date { get; set; }
 
         [JsonProperty("dateDef")]
-        public The20250305_DateDef DateDef { get; set; }
+        public The20251201_DateDef DateDef { get; set; }
 
         [JsonProperty("dateExceptions")]
         public object[] DateExceptions { get; set; }
@@ -438,28 +588,28 @@ namespace APIVerve.API.LiturgicalCalendar
         public string Precedence { get; set; }
 
         [JsonProperty("rank")]
-        public Rank Rank { get; set; }
+        public Rank? Rank { get; set; }
 
         [JsonProperty("allowSimilarRankItems")]
-        public bool AllowSimilarRankItems { get; set; }
+        public bool? AllowSimilarRankItems { get; set; }
 
         [JsonProperty("isHolyDayOfObligation")]
-        public bool IsHolyDayOfObligation { get; set; }
+        public bool? IsHolyDayOfObligation { get; set; }
 
         [JsonProperty("isOptional")]
-        public bool IsOptional { get; set; }
+        public bool? IsOptional { get; set; }
 
         [JsonProperty("i18nDef")]
-        public string[] I18NDef { get; set; }
+        public The20251217_I18NDef[] I18NDef { get; set; }
 
         [JsonProperty("seasons")]
-        public Season[] Seasons { get; set; }
+        public Season?[] Seasons { get; set; }
 
         [JsonProperty("periods")]
-        public Period[] Periods { get; set; }
+        public object[] Periods { get; set; }
 
         [JsonProperty("colors")]
-        public Color[] Colors { get; set; }
+        public Color?[] Colors { get; set; }
 
         [JsonProperty("commonsDef")]
         public object[] CommonsDef { get; set; }
@@ -477,115 +627,28 @@ namespace APIVerve.API.LiturgicalCalendar
         public Cycles Cycles { get; set; }
 
         [JsonProperty("fromCalendarId")]
-        public FromCalendarId FromCalendarId { get; set; }
+        public FromCalendarId? FromCalendarId { get; set; }
 
         [JsonProperty("fromExtendedCalendars")]
         public object[] FromExtendedCalendars { get; set; }
-    }
-
-    public partial class The20250305_DateDef
-    {
-        [JsonProperty("dateFn")]
-        public DateFn DateFn { get; set; }
-
-        [JsonProperty("yearOffset")]
-        public long YearOffset { get; set; }
-    }
-
-    public partial class The20250306
-    {
-        [JsonProperty("id")]
-        public string Id { get; set; }
-
-        [JsonProperty("date")]
-        public DateTimeOffset Date { get; set; }
-
-        [JsonProperty("dateDef")]
-        public The20250306_DateDef DateDef { get; set; }
-
-        [JsonProperty("dateExceptions")]
-        public object[] DateExceptions { get; set; }
-
-        [JsonProperty("alternativeTransferDateDefs")]
-        public object[] AlternativeTransferDateDefs { get; set; }
-
-        [JsonProperty("precedence")]
-        public Precedence Precedence { get; set; }
-
-        [JsonProperty("rank")]
-        public Rank Rank { get; set; }
-
-        [JsonProperty("allowSimilarRankItems")]
-        public bool AllowSimilarRankItems { get; set; }
-
-        [JsonProperty("isHolyDayOfObligation")]
-        public bool IsHolyDayOfObligation { get; set; }
-
-        [JsonProperty("isOptional")]
-        public bool IsOptional { get; set; }
-
-        [JsonProperty("i18nDef")]
-        public The20250306_I18NDef[] I18NDef { get; set; }
-
-        [JsonProperty("seasons")]
-        public Season[] Seasons { get; set; }
-
-        [JsonProperty("periods")]
-        public Period[] Periods { get; set; }
-
-        [JsonProperty("colors")]
-        public Color[] Colors { get; set; }
-
-        [JsonProperty("commonsDef")]
-        public object[] CommonsDef { get; set; }
-
-        [JsonProperty("martyrology")]
-        public object[] Martyrology { get; set; }
-
-        [JsonProperty("titles")]
-        public object[] Titles { get; set; }
-
-        [JsonProperty("calendar")]
-        public Calendar Calendar { get; set; }
-
-        [JsonProperty("cycles")]
-        public Cycles Cycles { get; set; }
-
-        [JsonProperty("fromCalendarId")]
-        public FromCalendarId FromCalendarId { get; set; }
-
-        [JsonProperty("fromExtendedCalendars")]
-        public object[] FromExtendedCalendars { get; set; }
-    }
-
-    public partial class The20250306_DateDef
-    {
-        [JsonProperty("dateFn")]
-        public DateFn DateFn { get; set; }
-
-        [JsonProperty("addDay")]
-        public long AddDay { get; set; }
-
-        [JsonProperty("yearOffset")]
-        public long YearOffset { get; set; }
     }
 
     public partial class TentacledI18NDef
     {
-        [JsonProperty("dow")]
-        public long Dow { get; set; }
+        [JsonProperty("day")]
+        public long? Day { get; set; }
     }
 
-    public partial class The2025030
+    public partial class The20251223
     {
         [JsonProperty("id")]
         public string Id { get; set; }
 
         [JsonProperty("date")]
-        public DateTimeOffset Date { get; set; }
+        public DateTimeOffset? Date { get; set; }
 
         [JsonProperty("dateDef")]
-        public The20250304_DateDef DateDef { get; set; }
+        public The20251204_DateDef DateDef { get; set; }
 
         [JsonProperty("dateExceptions")]
         public object[] DateExceptions { get; set; }
@@ -597,28 +660,28 @@ namespace APIVerve.API.LiturgicalCalendar
         public string Precedence { get; set; }
 
         [JsonProperty("rank")]
-        public string Rank { get; set; }
+        public Rank? Rank { get; set; }
 
         [JsonProperty("allowSimilarRankItems")]
-        public bool AllowSimilarRankItems { get; set; }
+        public bool? AllowSimilarRankItems { get; set; }
 
         [JsonProperty("isHolyDayOfObligation")]
-        public bool IsHolyDayOfObligation { get; set; }
+        public bool? IsHolyDayOfObligation { get; set; }
 
         [JsonProperty("isOptional")]
-        public bool IsOptional { get; set; }
+        public bool? IsOptional { get; set; }
 
         [JsonProperty("i18nDef")]
-        public The20250306_I18NDef[] I18NDef { get; set; }
+        public The20251217_I18NDef[] I18NDef { get; set; }
 
         [JsonProperty("seasons")]
-        public Season[] Seasons { get; set; }
+        public Season?[] Seasons { get; set; }
 
         [JsonProperty("periods")]
-        public Period[] Periods { get; set; }
+        public object[] Periods { get; set; }
 
         [JsonProperty("colors")]
-        public Color[] Colors { get; set; }
+        public Color?[] Colors { get; set; }
 
         [JsonProperty("commonsDef")]
         public string[] CommonsDef { get; set; }
@@ -636,25 +699,25 @@ namespace APIVerve.API.LiturgicalCalendar
         public Cycles Cycles { get; set; }
 
         [JsonProperty("fromCalendarId")]
-        public string FromCalendarId { get; set; }
+        public FromCalendarId? FromCalendarId { get; set; }
 
         [JsonProperty("fromExtendedCalendars")]
         public object[] FromExtendedCalendars { get; set; }
 
         [JsonProperty("weekday", NullValueHandling = NullValueHandling.Ignore)]
-        public The20250306 Weekday { get; set; }
+        public The20251217 Weekday { get; set; }
     }
 
-    public partial class The202503
+    public partial class The20251225_Element
     {
         [JsonProperty("id")]
         public string Id { get; set; }
 
         [JsonProperty("date")]
-        public DateTimeOffset Date { get; set; }
+        public DateTimeOffset? Date { get; set; }
 
         [JsonProperty("dateDef")]
-        public The20250306_DateDef DateDef { get; set; }
+        public The20251225_DateDef DateDef { get; set; }
 
         [JsonProperty("dateExceptions")]
         public object[] DateExceptions { get; set; }
@@ -669,229 +732,28 @@ namespace APIVerve.API.LiturgicalCalendar
         public string Rank { get; set; }
 
         [JsonProperty("allowSimilarRankItems")]
-        public bool AllowSimilarRankItems { get; set; }
+        public bool? AllowSimilarRankItems { get; set; }
 
         [JsonProperty("isHolyDayOfObligation")]
-        public bool IsHolyDayOfObligation { get; set; }
+        public bool? IsHolyDayOfObligation { get; set; }
 
         [JsonProperty("isOptional")]
-        public bool IsOptional { get; set; }
-
-        [JsonProperty("i18nDef")]
-        public The20250302_I18NDef[] I18NDef { get; set; }
-
-        [JsonProperty("seasons")]
-        public Season[] Seasons { get; set; }
-
-        [JsonProperty("periods")]
-        public Period[] Periods { get; set; }
-
-        [JsonProperty("colors")]
-        public string[] Colors { get; set; }
-
-        [JsonProperty("commonsDef")]
-        public object[] CommonsDef { get; set; }
-
-        [JsonProperty("martyrology")]
-        public object[] Martyrology { get; set; }
-
-        [JsonProperty("titles")]
-        public object[] Titles { get; set; }
-
-        [JsonProperty("calendar")]
-        public Calendar Calendar { get; set; }
-
-        [JsonProperty("cycles")]
-        public Cycles Cycles { get; set; }
-
-        [JsonProperty("fromCalendarId")]
-        public FromCalendarId FromCalendarId { get; set; }
-
-        [JsonProperty("fromExtendedCalendars")]
-        public object[] FromExtendedCalendars { get; set; }
-    }
-
-    public partial class The20250310
-    {
-        [JsonProperty("id")]
-        public string Id { get; set; }
-
-        [JsonProperty("date")]
-        public DateTimeOffset Date { get; set; }
-
-        [JsonProperty("dateDef")]
-        public The20250306_DateDef DateDef { get; set; }
-
-        [JsonProperty("dateExceptions")]
-        public object[] DateExceptions { get; set; }
-
-        [JsonProperty("alternativeTransferDateDefs")]
-        public object[] AlternativeTransferDateDefs { get; set; }
-
-        [JsonProperty("precedence")]
-        public Precedence Precedence { get; set; }
-
-        [JsonProperty("rank")]
-        public Rank Rank { get; set; }
-
-        [JsonProperty("allowSimilarRankItems")]
-        public bool AllowSimilarRankItems { get; set; }
-
-        [JsonProperty("isHolyDayOfObligation")]
-        public bool IsHolyDayOfObligation { get; set; }
-
-        [JsonProperty("isOptional")]
-        public bool IsOptional { get; set; }
-
-        [JsonProperty("i18nDef")]
-        public The20250310_I18NDef[] I18NDef { get; set; }
-
-        [JsonProperty("seasons")]
-        public Season[] Seasons { get; set; }
-
-        [JsonProperty("periods")]
-        public Period[] Periods { get; set; }
-
-        [JsonProperty("colors")]
-        public Color[] Colors { get; set; }
-
-        [JsonProperty("commonsDef")]
-        public object[] CommonsDef { get; set; }
-
-        [JsonProperty("martyrology")]
-        public object[] Martyrology { get; set; }
-
-        [JsonProperty("titles")]
-        public object[] Titles { get; set; }
-
-        [JsonProperty("calendar")]
-        public Calendar Calendar { get; set; }
-
-        [JsonProperty("cycles")]
-        public Cycles Cycles { get; set; }
-
-        [JsonProperty("fromCalendarId")]
-        public FromCalendarId FromCalendarId { get; set; }
-
-        [JsonProperty("fromExtendedCalendars")]
-        public object[] FromExtendedCalendars { get; set; }
-    }
-
-    public partial class The2025031
-    {
-        [JsonProperty("id")]
-        public string Id { get; set; }
-
-        [JsonProperty("date")]
-        public DateTimeOffset Date { get; set; }
-
-        [JsonProperty("dateDef")]
-        public The20250304_DateDef DateDef { get; set; }
-
-        [JsonProperty("dateExceptions")]
-        public object[] DateExceptions { get; set; }
-
-        [JsonProperty("alternativeTransferDateDefs")]
-        public object[] AlternativeTransferDateDefs { get; set; }
-
-        [JsonProperty("precedence")]
-        public string Precedence { get; set; }
-
-        [JsonProperty("rank")]
-        public string Rank { get; set; }
-
-        [JsonProperty("allowSimilarRankItems")]
-        public bool AllowSimilarRankItems { get; set; }
-
-        [JsonProperty("isHolyDayOfObligation")]
-        public bool IsHolyDayOfObligation { get; set; }
-
-        [JsonProperty("isOptional")]
-        public bool IsOptional { get; set; }
-
-        [JsonProperty("i18nDef")]
-        public The20250301_I18NDef[] I18NDef { get; set; }
-
-        [JsonProperty("seasons")]
-        public Season[] Seasons { get; set; }
-
-        [JsonProperty("periods")]
-        public Period[] Periods { get; set; }
-
-        [JsonProperty("colors")]
-        public Color[] Colors { get; set; }
-
-        [JsonProperty("commonsDef")]
-        public string[] CommonsDef { get; set; }
-
-        [JsonProperty("martyrology")]
-        public object[] Martyrology { get; set; }
-
-        [JsonProperty("titles")]
-        public object[] Titles { get; set; }
-
-        [JsonProperty("calendar")]
-        public Calendar Calendar { get; set; }
-
-        [JsonProperty("cycles")]
-        public Cycles Cycles { get; set; }
-
-        [JsonProperty("fromCalendarId")]
-        public string FromCalendarId { get; set; }
-
-        [JsonProperty("fromExtendedCalendars")]
-        public object[] FromExtendedCalendars { get; set; }
-
-        [JsonProperty("weekday", NullValueHandling = NullValueHandling.Ignore)]
-        public The20250310 Weekday { get; set; }
-    }
-
-    public partial class The20250319
-    {
-        [JsonProperty("id")]
-        public string Id { get; set; }
-
-        [JsonProperty("date")]
-        public DateTimeOffset Date { get; set; }
-
-        [JsonProperty("dateDef")]
-        public The20250319_DateDef DateDef { get; set; }
-
-        [JsonProperty("dateExceptions")]
-        public DateException[] DateExceptions { get; set; }
-
-        [JsonProperty("alternativeTransferDateDefs")]
-        public object[] AlternativeTransferDateDefs { get; set; }
-
-        [JsonProperty("precedence")]
-        public string Precedence { get; set; }
-
-        [JsonProperty("rank")]
-        public string Rank { get; set; }
-
-        [JsonProperty("allowSimilarRankItems")]
-        public bool AllowSimilarRankItems { get; set; }
-
-        [JsonProperty("isHolyDayOfObligation")]
-        public bool IsHolyDayOfObligation { get; set; }
-
-        [JsonProperty("isOptional")]
-        public bool IsOptional { get; set; }
+        public bool? IsOptional { get; set; }
 
         [JsonProperty("i18nDef")]
         public string[] I18NDef { get; set; }
 
         [JsonProperty("seasons")]
-        public Season[] Seasons { get; set; }
+        public Season?[] Seasons { get; set; }
 
         [JsonProperty("periods")]
-        public Period[] Periods { get; set; }
+        public Period?[] Periods { get; set; }
 
         [JsonProperty("colors")]
-        public string[] Colors { get; set; }
+        public Color?[] Colors { get; set; }
 
         [JsonProperty("commonsDef")]
-        public string[] CommonsDef { get; set; }
+        public object[] CommonsDef { get; set; }
 
         [JsonProperty("martyrology")]
         public object[] Martyrology { get; set; }
@@ -906,73 +768,31 @@ namespace APIVerve.API.LiturgicalCalendar
         public Cycles Cycles { get; set; }
 
         [JsonProperty("fromCalendarId")]
-        public string FromCalendarId { get; set; }
+        public FromCalendarId? FromCalendarId { get; set; }
 
         [JsonProperty("fromExtendedCalendars")]
         public object[] FromExtendedCalendars { get; set; }
     }
 
-    public partial class The20250319_DateDef
-    {
-        [JsonProperty("month")]
-        public long Month { get; set; }
-
-        [JsonProperty("date")]
-        public long Date { get; set; }
-    }
-
-    public partial class DateException
-    {
-        [JsonProperty("ifIsDayOfWeek", NullValueHandling = NullValueHandling.Ignore)]
-        public long? IfIsDayOfWeek { get; set; }
-
-        [JsonProperty("setDate")]
-        public SetDate SetDate { get; set; }
-
-        [JsonProperty("ifIsBetween", NullValueHandling = NullValueHandling.Ignore)]
-        public IfIsBetween IfIsBetween { get; set; }
-    }
-
-    public partial class IfIsBetween
-    {
-        [JsonProperty("from")]
-        public DateDef From { get; set; }
-
-        [JsonProperty("to")]
-        public DateDef To { get; set; }
-
-        [JsonProperty("inclusive")]
-        public bool Inclusive { get; set; }
-    }
-
-    public partial class DateDef
+    public partial class The20251225_DateDef
     {
         [JsonProperty("dateFn")]
         public string DateFn { get; set; }
+
+        [JsonProperty("yearOffset")]
+        public long? YearOffset { get; set; }
     }
 
-    public partial class SetDate
-    {
-        [JsonProperty("addDay", NullValueHandling = NullValueHandling.Ignore)]
-        public long? AddDay { get; set; }
-
-        [JsonProperty("dateFn", NullValueHandling = NullValueHandling.Ignore)]
-        public string DateFn { get; set; }
-
-        [JsonProperty("subtractDay", NullValueHandling = NullValueHandling.Ignore)]
-        public long? SubtractDay { get; set; }
-    }
-
-    public partial class The20250325
+    public partial class The20251226_Element
     {
         [JsonProperty("id")]
         public string Id { get; set; }
 
         [JsonProperty("date")]
-        public DateTimeOffset Date { get; set; }
+        public DateTimeOffset? Date { get; set; }
 
         [JsonProperty("dateDef")]
-        public DateDef DateDef { get; set; }
+        public The20251203_DateDef DateDef { get; set; }
 
         [JsonProperty("dateExceptions")]
         public object[] DateExceptions { get; set; }
@@ -987,22 +807,22 @@ namespace APIVerve.API.LiturgicalCalendar
         public string Rank { get; set; }
 
         [JsonProperty("allowSimilarRankItems")]
-        public bool AllowSimilarRankItems { get; set; }
+        public bool? AllowSimilarRankItems { get; set; }
 
         [JsonProperty("isHolyDayOfObligation")]
-        public bool IsHolyDayOfObligation { get; set; }
+        public bool? IsHolyDayOfObligation { get; set; }
 
         [JsonProperty("isOptional")]
-        public bool IsOptional { get; set; }
+        public bool? IsOptional { get; set; }
 
         [JsonProperty("i18nDef")]
         public string[] I18NDef { get; set; }
 
         [JsonProperty("seasons")]
-        public Season[] Seasons { get; set; }
+        public Season?[] Seasons { get; set; }
 
         [JsonProperty("periods")]
-        public Period[] Periods { get; set; }
+        public Period?[] Periods { get; set; }
 
         [JsonProperty("colors")]
         public string[] Colors { get; set; }
@@ -1023,69 +843,239 @@ namespace APIVerve.API.LiturgicalCalendar
         public Cycles Cycles { get; set; }
 
         [JsonProperty("fromCalendarId")]
-        public string FromCalendarId { get; set; }
+        public FromCalendarId? FromCalendarId { get; set; }
+
+        [JsonProperty("fromExtendedCalendars")]
+        public object[] FromExtendedCalendars { get; set; }
+
+        [JsonProperty("weekday")]
+        public The20251230 Weekday { get; set; }
+    }
+
+    public partial class The20251230
+    {
+        [JsonProperty("id")]
+        public string Id { get; set; }
+
+        [JsonProperty("date")]
+        public DateTimeOffset? Date { get; set; }
+
+        [JsonProperty("dateDef")]
+        public The20251201_DateDef DateDef { get; set; }
+
+        [JsonProperty("dateExceptions")]
+        public object[] DateExceptions { get; set; }
+
+        [JsonProperty("alternativeTransferDateDefs")]
+        public object[] AlternativeTransferDateDefs { get; set; }
+
+        [JsonProperty("precedence")]
+        public string Precedence { get; set; }
+
+        [JsonProperty("rank")]
+        public Rank? Rank { get; set; }
+
+        [JsonProperty("allowSimilarRankItems")]
+        public bool? AllowSimilarRankItems { get; set; }
+
+        [JsonProperty("isHolyDayOfObligation")]
+        public bool? IsHolyDayOfObligation { get; set; }
+
+        [JsonProperty("isOptional")]
+        public bool? IsOptional { get; set; }
+
+        [JsonProperty("i18nDef")]
+        public The20251230_I18NDef[] I18NDef { get; set; }
+
+        [JsonProperty("seasons")]
+        public Season?[] Seasons { get; set; }
+
+        [JsonProperty("periods")]
+        public Period?[] Periods { get; set; }
+
+        [JsonProperty("colors")]
+        public Color?[] Colors { get; set; }
+
+        [JsonProperty("commonsDef")]
+        public object[] CommonsDef { get; set; }
+
+        [JsonProperty("martyrology")]
+        public object[] Martyrology { get; set; }
+
+        [JsonProperty("titles")]
+        public object[] Titles { get; set; }
+
+        [JsonProperty("calendar")]
+        public Calendar Calendar { get; set; }
+
+        [JsonProperty("cycles")]
+        public Cycles Cycles { get; set; }
+
+        [JsonProperty("fromCalendarId")]
+        public FromCalendarId? FromCalendarId { get; set; }
 
         [JsonProperty("fromExtendedCalendars")]
         public object[] FromExtendedCalendars { get; set; }
     }
 
-    public enum Season { Lent, OrdinaryTime };
+    public partial class StickyI18NDef
+    {
+        [JsonProperty("count")]
+        public long? Count { get; set; }
+    }
+
+    public partial class The20251229_Element
+    {
+        [JsonProperty("id")]
+        public string Id { get; set; }
+
+        [JsonProperty("date")]
+        public DateTimeOffset? Date { get; set; }
+
+        [JsonProperty("dateDef")]
+        public The20251204_DateDef DateDef { get; set; }
+
+        [JsonProperty("dateExceptions")]
+        public object[] DateExceptions { get; set; }
+
+        [JsonProperty("alternativeTransferDateDefs")]
+        public object[] AlternativeTransferDateDefs { get; set; }
+
+        [JsonProperty("precedence")]
+        public string Precedence { get; set; }
+
+        [JsonProperty("rank")]
+        public Rank? Rank { get; set; }
+
+        [JsonProperty("allowSimilarRankItems")]
+        public bool? AllowSimilarRankItems { get; set; }
+
+        [JsonProperty("isHolyDayOfObligation")]
+        public bool? IsHolyDayOfObligation { get; set; }
+
+        [JsonProperty("isOptional")]
+        public bool? IsOptional { get; set; }
+
+        [JsonProperty("i18nDef")]
+        public The20251230_I18NDef[] I18NDef { get; set; }
+
+        [JsonProperty("seasons")]
+        public Season?[] Seasons { get; set; }
+
+        [JsonProperty("periods")]
+        public Period?[] Periods { get; set; }
+
+        [JsonProperty("colors")]
+        public Color?[] Colors { get; set; }
+
+        [JsonProperty("commonsDef")]
+        public string[] CommonsDef { get; set; }
+
+        [JsonProperty("martyrology")]
+        public object[] Martyrology { get; set; }
+
+        [JsonProperty("titles")]
+        public object[] Titles { get; set; }
+
+        [JsonProperty("calendar")]
+        public Calendar Calendar { get; set; }
+
+        [JsonProperty("cycles")]
+        public Cycles Cycles { get; set; }
+
+        [JsonProperty("fromCalendarId")]
+        public FromCalendarId? FromCalendarId { get; set; }
+
+        [JsonProperty("fromExtendedCalendars")]
+        public object[] FromExtendedCalendars { get; set; }
+
+        [JsonProperty("weekday", NullValueHandling = NullValueHandling.Ignore)]
+        public The20251230 Weekday { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
+    }
+
+    public enum Season { Advent, ChristmasTime };
+
+    public enum Color { Purple, White };
 
     public enum ProperCycle { ProperOfSaints, ProperOfTime };
 
     public enum PsalterWeek { Week1, Week2, Week3, Week4 };
 
-    public enum SundayCycle { YearC };
+    public enum SundayCycle { YearA };
 
-    public enum WeekdayCycle { Year1 };
+    public enum WeekdayCycle { Year2 };
 
-    public enum FromCalendarId { ProperOfTime };
+    public enum DateFn { PrivilegedWeekdayOfAdvent, SundayOfAdvent, UnprivilegedWeekdayOfAdvent, WeekdayWithinOctaveOfChristmas };
 
-    public enum Rank { Weekday };
+    public enum FromCalendarId { Ma, ProperOfTime };
 
-    public enum Color { Purple };
+    public enum I18NDefEnum { SeasonsAdventWeekday };
 
-    public enum DateFn { AshWednesday };
+    public enum Precedence { OptionalMemorial12, Weekday13 };
 
-    public enum Period { PresentationOfTheLordToHolyThursday };
+    public enum Rank { OptionalMemorial, Weekday };
 
-    public enum Precedence { PrivilegedWeekday9 };
+    public enum Period { ChristmasOctave, ChristmasToPresentationOfTheLord };
 
-    public enum I18NDefEnum { SeasonsLentWeekday };
-
-    public partial struct The20250301_I18NDef
-    {
-        public PurpleI18NDef PurpleI18NDef;
-        public string String;
-
-        public static implicit operator The20250301_I18NDef(PurpleI18NDef PurpleI18NDef) => new The20250301_I18NDef { PurpleI18NDef = PurpleI18NDef };
-        public static implicit operator The20250301_I18NDef(string String) => new The20250301_I18NDef { String = String };
-    }
-
-    public partial struct The20250302_I18NDef
-    {
-        public FluffyI18NDef FluffyI18NDef;
-        public string String;
-
-        public static implicit operator The20250302_I18NDef(FluffyI18NDef FluffyI18NDef) => new The20250302_I18NDef { FluffyI18NDef = FluffyI18NDef };
-        public static implicit operator The20250302_I18NDef(string String) => new The20250302_I18NDef { String = String };
-    }
-
-    public partial struct The20250306_I18NDef
-    {
-        public string String;
-        public TentacledI18NDef TentacledI18NDef;
-
-        public static implicit operator The20250306_I18NDef(string String) => new The20250306_I18NDef { String = String };
-        public static implicit operator The20250306_I18NDef(TentacledI18NDef TentacledI18NDef) => new The20250306_I18NDef { TentacledI18NDef = TentacledI18NDef };
-    }
-
-    public partial struct The20250310_I18NDef
+    public partial struct The20251201_I18NDef
     {
         public I18NDefEnum? Enum;
         public PurpleI18NDef PurpleI18NDef;
 
-        public static implicit operator The20250310_I18NDef(I18NDefEnum Enum) => new The20250310_I18NDef { Enum = Enum };
-        public static implicit operator The20250310_I18NDef(PurpleI18NDef PurpleI18NDef) => new The20250310_I18NDef { PurpleI18NDef = PurpleI18NDef };
+        public static implicit operator The20251201_I18NDef(I18NDefEnum Enum) => new The20251201_I18NDef { Enum = Enum };
+        public static implicit operator The20251201_I18NDef(PurpleI18NDef PurpleI18NDef) => new The20251201_I18NDef { PurpleI18NDef = PurpleI18NDef };
+        public bool IsNull => PurpleI18NDef == null && Enum == null;
+    }
+
+    public partial struct The20251204_I18NDef
+    {
+        public PurpleI18NDef PurpleI18NDef;
+        public string String;
+
+        public static implicit operator The20251204_I18NDef(PurpleI18NDef PurpleI18NDef) => new The20251204_I18NDef { PurpleI18NDef = PurpleI18NDef };
+        public static implicit operator The20251204_I18NDef(string String) => new The20251204_I18NDef { String = String };
+        public bool IsNull => PurpleI18NDef == null && String == null;
+    }
+
+    public partial struct The20251207_I18NDef
+    {
+        public FluffyI18NDef FluffyI18NDef;
+        public string String;
+
+        public static implicit operator The20251207_I18NDef(FluffyI18NDef FluffyI18NDef) => new The20251207_I18NDef { FluffyI18NDef = FluffyI18NDef };
+        public static implicit operator The20251207_I18NDef(string String) => new The20251207_I18NDef { String = String };
+        public bool IsNull => FluffyI18NDef == null && String == null;
+    }
+
+    public partial struct The20251217_I18NDef
+    {
+        public string String;
+        public TentacledI18NDef TentacledI18NDef;
+
+        public static implicit operator The20251217_I18NDef(string String) => new The20251217_I18NDef { String = String };
+        public static implicit operator The20251217_I18NDef(TentacledI18NDef TentacledI18NDef) => new The20251217_I18NDef { TentacledI18NDef = TentacledI18NDef };
+        public bool IsNull => TentacledI18NDef == null && String == null;
+    }
+
+    public partial struct The20251230_I18NDef
+    {
+        public StickyI18NDef StickyI18NDef;
+        public string String;
+
+        public static implicit operator The20251230_I18NDef(StickyI18NDef StickyI18NDef) => new The20251230_I18NDef { StickyI18NDef = StickyI18NDef };
+        public static implicit operator The20251230_I18NDef(string String) => new The20251230_I18NDef { String = String };
+        public bool IsNull => StickyI18NDef == null && String == null;
     }
 }
