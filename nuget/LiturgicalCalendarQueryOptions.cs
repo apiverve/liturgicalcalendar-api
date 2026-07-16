@@ -14,12 +14,12 @@ namespace APIVerve.API.LiturgicalCalendar
         /// The month to get Liturgical Calendar data for (default: current month)
         /// </summary>
         [JsonProperty("month")]
-        public string Month { get; set; }
+        public int? Month { get; set; }
 
         /// <summary>
         /// The year to get Liturgical Calendar data for (default: current year)
         /// </summary>
         [JsonProperty("year")]
-        public string Year { get; set; }
+        public int? Year { get; set; }
     }
 }
