@@ -1,13 +1,13 @@
-# [Liturgical Calendar API](https://apiverve.com/marketplace/liturgicalcalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Liturgical Calendar API](https://apiverve.com/marketplace/liturgicalcalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Liturgical Calendar is a simple tool for getting the dates of the Liturgical Calendar. It returns the dates of the Liturgical Calendar for a given year.
+Liturgical Calendar retrieves Catholic liturgical calendar events for any given month. It details feast ranks, vestment colors, liturgical seasons, and holy days of obligation, while paid plans add custom year queries.
 
 The Liturgical Calendar API provides a simple, reliable way to integrate liturgical calendar functionality into your applications. Built for developers who need production-ready liturgical calendar capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/liturgicalcalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/liturgicalcalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/liturgicalcalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/liturgicalcalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/liturgicalcalendar-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Liturgical Calendar API](https://apiverve.com/marketplace/liturgicalcalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Liturgical Calendar API](https://apiverve.com/marketplace/liturgicalcalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/liturgicalcalendar](https://docs.apiverve.com/ref/liturgicalcalendar)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -211,183 +211,35 @@ A real response from the Liturgical Calendar API:
   "status": "ok",
   "error": null,
   "data": {
-    "2025-12-01": [
+    "2026-01-01": [
       {
-        "id": "advent_1_monday",
-        "date": "2025-12-01",
-        "dateDef": {
-          "dateFn": "unprivilegedWeekdayOfAdvent",
-          "dateArgs": [
-            1,
-            1
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "WEEKDAY_13",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
+        "id": "mary_mother_of_god",
+        "precedence": "GENERAL_SOLEMNITY_3",
+        "rank": "SOLEMNITY",
+        "isHolyDayOfObligation": true,
         "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.weekday",
-          {
-            "week": 1,
-            "dow": 1
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
         "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 1,
-          "dayOfSeason": 2,
-          "dayOfWeek": 1,
-          "nthDayOfWeekInMonth": 1,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_1"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
+          "WHITE"
+        ]
       }
     ],
-    "2025-12-02": [
+    "2026-01-02": [
       {
-        "id": "advent_1_tuesday",
-        "date": "2025-12-02",
-        "dateDef": {
-          "dateFn": "unprivilegedWeekdayOfAdvent",
-          "dateArgs": [
-            2,
-            1
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "WEEKDAY_13",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.weekday",
-          {
-            "week": 1,
-            "dow": 2
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 1,
-          "dayOfSeason": 3,
-          "dayOfWeek": 2,
-          "nthDayOfWeekInMonth": 1,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_1"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      }
-    ],
-    "2025-12-03": [
-      {
-        "id": "francis_xavier_priest",
-        "date": "2025-12-03",
-        "dateDef": {
-          "month": 12,
-          "date": 3
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
+        "id": "basil_the_great_and_gregory_nazianzen_bishops",
         "precedence": "GENERAL_MEMORIAL_10",
         "rank": "MEMORIAL",
-        "allowSimilarRankItems": false,
         "isHolyDayOfObligation": false,
         "isOptional": false,
-        "i18nDef": [
-          "names:francis_xavier_priest"
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
         "colors": [
           "WHITE"
         ],
-        "commonsDef": [
-          "None"
-        ],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 1,
-          "dayOfSeason": 4,
-          "dayOfWeek": 3,
-          "nthDayOfWeekInMonth": 1,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_SAINTS",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_1"
-        },
-        "fromCalendarId": "ma",
-        "fromExtendedCalendars": [],
         "weekday": {
-          "id": "advent_1_wednesday",
-          "date": "2025-12-03",
+          "id": "christmas_time_january_2",
+          "date": "2026-01-02",
           "dateDef": {
-            "dateFn": "unprivilegedWeekdayOfAdvent",
+            "dateFn": "weekdayBeforeEpiphany",
             "dateArgs": [
-              3,
-              1
+              2
             ],
             "yearOffset": 0
           },
@@ -399,33 +251,35 @@ A real response from the Liturgical Calendar API:
           "isHolyDayOfObligation": false,
           "isOptional": false,
           "i18nDef": [
-            "seasons:advent.weekday",
+            "seasons:christmas_time.before_epiphany",
             {
-              "week": 1,
-              "dow": 3
+              "day": 2
             }
           ],
           "seasons": [
-            "ADVENT"
+            "CHRISTMAS_TIME"
           ],
-          "periods": [],
+          "periods": [
+            "DAYS_BEFORE_EPIPHANY",
+            "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD"
+          ],
           "colors": [
-            "PURPLE"
+            "WHITE"
           ],
           "commonsDef": [],
           "martyrology": [],
           "titles": [],
           "calendar": {
-            "weekOfSeason": 1,
-            "dayOfSeason": 4,
-            "dayOfWeek": 3,
+            "weekOfSeason": 2,
+            "dayOfSeason": 9,
+            "dayOfWeek": 5,
             "nthDayOfWeekInMonth": 1,
-            "startOfSeason": "2025-11-30",
-            "endOfSeason": "2025-12-24",
+            "startOfSeason": "2025-12-25",
+            "endOfSeason": "2026-01-11",
             "startOfLiturgicalYear": "2025-11-30",
             "endOfLiturgicalYear": "2026-11-28",
             "seasons": [
-              "ADVENT"
+              "CHRISTMAS_TIME"
             ]
           },
           "cycles": {
@@ -439,346 +293,249 @@ A real response from the Liturgical Calendar API:
         }
       }
     ],
-    "2025-12-04": [
+    "2026-01-03": [
       {
-        "id": "advent_1_thursday",
-        "date": "2025-12-04",
-        "dateDef": {
-          "dateFn": "unprivilegedWeekdayOfAdvent",
-          "dateArgs": [
-            4,
-            1
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
+        "id": "christmas_time_january_3",
         "precedence": "WEEKDAY_13",
         "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
         "isHolyDayOfObligation": false,
         "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.weekday",
-          {
-            "week": 1,
-            "dow": 4
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
         "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 1,
-          "dayOfSeason": 5,
-          "dayOfWeek": 4,
-          "nthDayOfWeekInMonth": 1,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_1"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
+          "WHITE"
+        ]
       },
       {
-        "id": "john_damascene_priest",
-        "date": "2025-12-04",
-        "dateDef": {
-          "month": 12,
-          "date": 4
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
+        "id": "most_holy_name_of_jesus",
         "precedence": "OPTIONAL_MEMORIAL_12",
         "rank": "OPTIONAL_MEMORIAL",
-        "allowSimilarRankItems": false,
         "isHolyDayOfObligation": false,
         "isOptional": true,
-        "i18nDef": [
-          "names:john_damascene_priest"
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
         "colors": [
           "WHITE"
         ],
-        "commonsDef": [
-          "Pastors",
-          "DoctorsOfTheChurch"
-        ],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 1,
-          "dayOfSeason": 5,
-          "dayOfWeek": 4,
-          "nthDayOfWeekInMonth": 1,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_SAINTS",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_1"
-        },
-        "fromCalendarId": "ma",
-        "fromExtendedCalendars": [],
         "weekday": {
-          "id": "advent_1_thursday",
-          "date": "2025-12-04",
-          "dateDef": {
-            "dateFn": "unprivilegedWeekdayOfAdvent",
-            "dateArgs": [
-              4,
-              1
-            ],
-            "yearOffset": 0
-          },
-          "dateExceptions": [],
-          "alternativeTransferDateDefs": [],
+          "id": "christmas_time_january_3",
           "precedence": "WEEKDAY_13",
           "rank": "WEEKDAY",
-          "allowSimilarRankItems": false,
           "isHolyDayOfObligation": false,
           "isOptional": false,
-          "i18nDef": [
-            "seasons:advent.weekday",
-            {
-              "week": 1,
-              "dow": 4
-            }
-          ],
-          "seasons": [
-            "ADVENT"
-          ],
-          "periods": [],
           "colors": [
-            "PURPLE"
-          ],
-          "commonsDef": [],
-          "martyrology": [],
-          "titles": [],
-          "calendar": {
-            "weekOfSeason": 1,
-            "dayOfSeason": 5,
-            "dayOfWeek": 4,
-            "nthDayOfWeekInMonth": 1,
-            "startOfSeason": "2025-11-30",
-            "endOfSeason": "2025-12-24",
-            "startOfLiturgicalYear": "2025-11-30",
-            "endOfLiturgicalYear": "2026-11-28",
-            "seasons": [
-              "ADVENT"
-            ]
-          },
-          "cycles": {
-            "properCycle": "PROPER_OF_TIME",
-            "sundayCycle": "YEAR_A",
-            "weekdayCycle": "YEAR_2",
-            "psalterWeek": "WEEK_1"
-          },
-          "fromCalendarId": "ProperOfTime",
-          "fromExtendedCalendars": []
+            "WHITE"
+          ]
         }
       }
     ],
-    "2025-12-05": [
+    "2026-01-04": [
       {
-        "id": "advent_1_friday",
-        "date": "2025-12-05",
-        "dateDef": {
-          "dateFn": "unprivilegedWeekdayOfAdvent",
-          "dateArgs": [
-            5,
-            1
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "WEEKDAY_13",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
+        "id": "second_sunday_after_christmas",
+        "precedence": "UNPRIVILEGED_SUNDAY_6",
+        "rank": "SUNDAY",
+        "isHolyDayOfObligation": true,
         "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.weekday",
-          {
-            "week": 1,
-            "dow": 5
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
         "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 1,
-          "dayOfSeason": 6,
-          "dayOfWeek": 5,
-          "nthDayOfWeekInMonth": 1,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_1"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
+          "WHITE"
+        ]
       }
     ],
-    "2025-12-06": [
+    "2026-01-05": [
       {
-        "id": "advent_1_saturday",
-        "date": "2025-12-06",
-        "dateDef": {
-          "dateFn": "unprivilegedWeekdayOfAdvent",
-          "dateArgs": [
-            6,
-            1
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
+        "id": "christmas_time_january_5",
         "precedence": "WEEKDAY_13",
         "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
         "isHolyDayOfObligation": false,
         "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.weekday",
-          {
-            "week": 1,
-            "dow": 6
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
         "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 1,
-          "dayOfSeason": 7,
-          "dayOfWeek": 6,
-          "nthDayOfWeekInMonth": 1,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_1"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
+          "WHITE"
+        ]
+      }
+    ],
+    "2026-01-06": [
+      {
+        "id": "epiphany_of_the_lord",
+        "precedence": "PROPER_OF_TIME_SOLEMNITY_2",
+        "rank": "SOLEMNITY",
+        "isHolyDayOfObligation": true,
+        "isOptional": false,
+        "colors": [
+          "WHITE"
+        ]
+      }
+    ],
+    "2026-01-07": [
+      {
+        "id": "wednesday_after_epiphany",
+        "precedence": "WEEKDAY_13",
+        "rank": "WEEKDAY",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "WHITE"
+        ]
       },
       {
-        "id": "nicholas_of_myra_bishop",
-        "date": "2025-12-06",
-        "dateDef": {
-          "month": 12,
-          "date": 6
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
+        "id": "raymond_of_penyafort_priest",
         "precedence": "OPTIONAL_MEMORIAL_12",
         "rank": "OPTIONAL_MEMORIAL",
-        "allowSimilarRankItems": false,
         "isHolyDayOfObligation": false,
         "isOptional": true,
-        "i18nDef": [
-          "names:nicholas_of_myra_bishop"
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
         "colors": [
           "WHITE"
         ],
-        "commonsDef": [
-          "Bishops"
-        ],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 1,
-          "dayOfSeason": 7,
-          "dayOfWeek": 6,
-          "nthDayOfWeekInMonth": 1,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_SAINTS",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_1"
-        },
-        "fromCalendarId": "ma",
-        "fromExtendedCalendars": [],
         "weekday": {
-          "id": "advent_1_saturday",
-          "date": "2025-12-06",
+          "id": "wednesday_after_epiphany",
+          "precedence": "WEEKDAY_13",
+          "rank": "WEEKDAY",
+          "isHolyDayOfObligation": false,
+          "isOptional": false,
+          "colors": [
+            "WHITE"
+          ]
+        }
+      }
+    ],
+    "2026-01-08": [
+      {
+        "id": "thursday_after_epiphany",
+        "precedence": "WEEKDAY_13",
+        "rank": "WEEKDAY",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "WHITE"
+        ]
+      }
+    ],
+    "2026-01-09": [
+      {
+        "id": "friday_after_epiphany",
+        "precedence": "WEEKDAY_13",
+        "rank": "WEEKDAY",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "WHITE"
+        ]
+      }
+    ],
+    "2026-01-10": [
+      {
+        "id": "saturday_after_epiphany",
+        "precedence": "WEEKDAY_13",
+        "rank": "WEEKDAY",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "WHITE"
+        ]
+      }
+    ],
+    "2026-01-11": [
+      {
+        "id": "baptism_of_the_lord",
+        "precedence": "PROPER_OF_TIME_SOLEMNITY_2",
+        "rank": "SOLEMNITY",
+        "isHolyDayOfObligation": true,
+        "isOptional": false,
+        "colors": [
+          "WHITE"
+        ]
+      }
+    ],
+    "2026-01-12": [
+      {
+        "id": "ordinary_time_1_monday",
+        "precedence": "WEEKDAY_13",
+        "rank": "WEEKDAY",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "GREEN"
+        ]
+      }
+    ],
+    "2026-01-13": [
+      {
+        "id": "ordinary_time_1_tuesday",
+        "precedence": "WEEKDAY_13",
+        "rank": "WEEKDAY",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "GREEN"
+        ]
+      },
+      {
+        "id": "hilary_of_poitiers_bishop",
+        "precedence": "OPTIONAL_MEMORIAL_12",
+        "rank": "OPTIONAL_MEMORIAL",
+        "isHolyDayOfObligation": false,
+        "isOptional": true,
+        "colors": [
+          "WHITE"
+        ],
+        "weekday": {
+          "id": "ordinary_time_1_tuesday",
+          "precedence": "WEEKDAY_13",
+          "rank": "WEEKDAY",
+          "isHolyDayOfObligation": false,
+          "isOptional": false,
+          "colors": [
+            "GREEN"
+          ]
+        }
+      }
+    ],
+    "2026-01-14": [
+      {
+        "id": "ordinary_time_1_wednesday",
+        "precedence": "WEEKDAY_13",
+        "rank": "WEEKDAY",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "GREEN"
+        ]
+      }
+    ],
+    "2026-01-15": [
+      {
+        "id": "ordinary_time_1_thursday",
+        "precedence": "WEEKDAY_13",
+        "rank": "WEEKDAY",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "GREEN"
+        ]
+      }
+    ],
+    "2026-01-16": [
+      {
+        "id": "ordinary_time_1_friday",
+        "precedence": "WEEKDAY_13",
+        "rank": "WEEKDAY",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "GREEN"
+        ]
+      }
+    ],
+    "2026-01-17": [
+      {
+        "id": "anthony_of_egypt_abbot",
+        "precedence": "GENERAL_MEMORIAL_10",
+        "rank": "MEMORIAL",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "WHITE"
+        ],
+        "weekday": {
+          "id": "ordinary_time_1_saturday",
+          "date": "2026-01-17",
           "dateDef": {
-            "dateFn": "unprivilegedWeekdayOfAdvent",
+            "dateFn": "dateOfOrdinaryTime",
             "dateArgs": [
               6,
               1
@@ -793,33 +550,35 @@ A real response from the Liturgical Calendar API:
           "isHolyDayOfObligation": false,
           "isOptional": false,
           "i18nDef": [
-            "seasons:advent.weekday",
+            "seasons:ordinary_time.weekday",
             {
               "week": 1,
               "dow": 6
             }
           ],
           "seasons": [
-            "ADVENT"
+            "ORDINARY_TIME"
           ],
-          "periods": [],
+          "periods": [
+            "EARLY_ORDINARY_TIME"
+          ],
           "colors": [
-            "PURPLE"
+            "GREEN"
           ],
           "commonsDef": [],
           "martyrology": [],
           "titles": [],
           "calendar": {
             "weekOfSeason": 1,
-            "dayOfSeason": 7,
+            "dayOfSeason": 6,
             "dayOfWeek": 6,
-            "nthDayOfWeekInMonth": 1,
-            "startOfSeason": "2025-11-30",
-            "endOfSeason": "2025-12-24",
+            "nthDayOfWeekInMonth": 3,
+            "startOfSeason": "2026-01-12",
+            "endOfSeason": "2026-11-28",
             "startOfLiturgicalYear": "2025-11-30",
             "endOfLiturgicalYear": "2026-11-28",
             "seasons": [
-              "ADVENT"
+              "ORDINARY_TIME"
             ]
           },
           "cycles": {
@@ -833,230 +592,99 @@ A real response from the Liturgical Calendar API:
         }
       }
     ],
-    "2025-12-07": [
+    "2026-01-18": [
       {
-        "id": "advent_2_sunday",
-        "date": "2025-12-07",
-        "dateDef": {
-          "dateFn": "sundayOfAdvent",
-          "dateArgs": [
-            2
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "PRIVILEGED_SUNDAY_2",
+        "id": "ordinary_time_2_sunday",
+        "precedence": "UNPRIVILEGED_SUNDAY_6",
         "rank": "SUNDAY",
-        "allowSimilarRankItems": false,
         "isHolyDayOfObligation": true,
         "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.sunday",
-          {
-            "week": 2
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
         "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 8,
-          "dayOfWeek": 0,
-          "nthDayOfWeekInMonth": 1,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_2"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
+          "GREEN"
+        ]
       }
     ],
-    "2025-12-08": [
+    "2026-01-19": [
       {
-        "id": "immaculate_conception_of_the_blessed_virgin_mary",
-        "date": "2025-12-08",
-        "dateDef": {
-          "dateFn": "immaculateConceptionOfMary"
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "GENERAL_SOLEMNITY_3",
-        "rank": "SOLEMNITY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": true,
-        "isOptional": false,
-        "i18nDef": [
-          "names:immaculate_conception_of_the_blessed_virgin_mary"
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "WHITE"
-        ],
-        "commonsDef": [
-          "None"
-        ],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 9,
-          "dayOfWeek": 1,
-          "nthDayOfWeekInMonth": 2,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_SAINTS",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_2"
-        },
-        "fromCalendarId": "ma",
-        "fromExtendedCalendars": []
-      }
-    ],
-    "2025-12-09": [
-      {
-        "id": "advent_2_tuesday",
-        "date": "2025-12-09",
-        "dateDef": {
-          "dateFn": "unprivilegedWeekdayOfAdvent",
-          "dateArgs": [
-            2,
-            2
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
+        "id": "ordinary_time_2_monday",
         "precedence": "WEEKDAY_13",
         "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
         "isHolyDayOfObligation": false,
         "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.weekday",
-          {
-            "week": 2,
-            "dow": 2
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
         "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 10,
-          "dayOfWeek": 2,
-          "nthDayOfWeekInMonth": 2,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_2"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
+          "GREEN"
+        ]
+      }
+    ],
+    "2026-01-20": [
+      {
+        "id": "ordinary_time_2_tuesday",
+        "precedence": "WEEKDAY_13",
+        "rank": "WEEKDAY",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "GREEN"
+        ]
       },
       {
-        "id": "juan_diego_cuauhtlatoatzin",
-        "date": "2025-12-09",
-        "dateDef": {
-          "month": 12,
-          "date": 9
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
+        "id": "fabian_i_pope",
         "precedence": "OPTIONAL_MEMORIAL_12",
         "rank": "OPTIONAL_MEMORIAL",
-        "allowSimilarRankItems": false,
         "isHolyDayOfObligation": false,
         "isOptional": true,
-        "i18nDef": [
-          "names:juan_diego_cuauhtlatoatzin"
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
         "colors": [
-          "WHITE"
+          "RED"
         ],
-        "commonsDef": [
-          "Saints"
-        ],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 10,
-          "dayOfWeek": 2,
-          "nthDayOfWeekInMonth": 2,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_SAINTS",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_2"
-        },
-        "fromCalendarId": "ma",
-        "fromExtendedCalendars": [],
         "weekday": {
-          "id": "advent_2_tuesday",
-          "date": "2025-12-09",
+          "id": "ordinary_time_2_tuesday",
+          "precedence": "WEEKDAY_13",
+          "rank": "WEEKDAY",
+          "isHolyDayOfObligation": false,
+          "isOptional": false,
+          "colors": [
+            "GREEN"
+          ]
+        }
+      },
+      {
+        "id": "sebastian_of_milan_martyr",
+        "precedence": "OPTIONAL_MEMORIAL_12",
+        "rank": "OPTIONAL_MEMORIAL",
+        "isHolyDayOfObligation": false,
+        "isOptional": true,
+        "colors": [
+          "RED"
+        ],
+        "weekday": {
+          "id": "ordinary_time_2_tuesday",
+          "precedence": "WEEKDAY_13",
+          "rank": "WEEKDAY",
+          "isHolyDayOfObligation": false,
+          "isOptional": false,
+          "colors": [
+            "GREEN"
+          ]
+        }
+      }
+    ],
+    "2026-01-21": [
+      {
+        "id": "agnes_of_rome_virgin",
+        "precedence": "GENERAL_MEMORIAL_10",
+        "rank": "MEMORIAL",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "RED"
+        ],
+        "weekday": {
+          "id": "ordinary_time_2_wednesday",
+          "date": "2026-01-21",
           "dateDef": {
-            "dateFn": "unprivilegedWeekdayOfAdvent",
+            "dateFn": "dateOfOrdinaryTime",
             "dateArgs": [
-              2,
+              3,
               2
             ],
             "yearOffset": 0
@@ -1069,18 +697,20 @@ A real response from the Liturgical Calendar API:
           "isHolyDayOfObligation": false,
           "isOptional": false,
           "i18nDef": [
-            "seasons:advent.weekday",
+            "seasons:ordinary_time.weekday",
             {
               "week": 2,
-              "dow": 2
+              "dow": 3
             }
           ],
           "seasons": [
-            "ADVENT"
+            "ORDINARY_TIME"
           ],
-          "periods": [],
+          "periods": [
+            "EARLY_ORDINARY_TIME"
+          ],
           "colors": [
-            "PURPLE"
+            "GREEN"
           ],
           "commonsDef": [],
           "martyrology": [],
@@ -1088,181 +718,14 @@ A real response from the Liturgical Calendar API:
           "calendar": {
             "weekOfSeason": 2,
             "dayOfSeason": 10,
-            "dayOfWeek": 2,
-            "nthDayOfWeekInMonth": 2,
-            "startOfSeason": "2025-11-30",
-            "endOfSeason": "2025-12-24",
-            "startOfLiturgicalYear": "2025-11-30",
-            "endOfLiturgicalYear": "2026-11-28",
-            "seasons": [
-              "ADVENT"
-            ]
-          },
-          "cycles": {
-            "properCycle": "PROPER_OF_TIME",
-            "sundayCycle": "YEAR_A",
-            "weekdayCycle": "YEAR_2",
-            "psalterWeek": "WEEK_2"
-          },
-          "fromCalendarId": "ProperOfTime",
-          "fromExtendedCalendars": []
-        }
-      }
-    ],
-    "2025-12-10": [
-      {
-        "id": "advent_2_wednesday",
-        "date": "2025-12-10",
-        "dateDef": {
-          "dateFn": "unprivilegedWeekdayOfAdvent",
-          "dateArgs": [
-            3,
-            2
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "WEEKDAY_13",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.weekday",
-          {
-            "week": 2,
-            "dow": 3
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 11,
-          "dayOfWeek": 3,
-          "nthDayOfWeekInMonth": 2,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_2"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      },
-      {
-        "id": "our_lady_of_loreto",
-        "date": "2025-12-10",
-        "dateDef": {
-          "month": 12,
-          "date": 10
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "OPTIONAL_MEMORIAL_12",
-        "rank": "OPTIONAL_MEMORIAL",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": true,
-        "i18nDef": [
-          "names:our_lady_of_loreto"
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "WHITE"
-        ],
-        "commonsDef": [
-          "BlessedVirginMary"
-        ],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 11,
-          "dayOfWeek": 3,
-          "nthDayOfWeekInMonth": 2,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_SAINTS",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_2"
-        },
-        "fromCalendarId": "ma",
-        "fromExtendedCalendars": [],
-        "weekday": {
-          "id": "advent_2_wednesday",
-          "date": "2025-12-10",
-          "dateDef": {
-            "dateFn": "unprivilegedWeekdayOfAdvent",
-            "dateArgs": [
-              3,
-              2
-            ],
-            "yearOffset": 0
-          },
-          "dateExceptions": [],
-          "alternativeTransferDateDefs": [],
-          "precedence": "WEEKDAY_13",
-          "rank": "WEEKDAY",
-          "allowSimilarRankItems": false,
-          "isHolyDayOfObligation": false,
-          "isOptional": false,
-          "i18nDef": [
-            "seasons:advent.weekday",
-            {
-              "week": 2,
-              "dow": 3
-            }
-          ],
-          "seasons": [
-            "ADVENT"
-          ],
-          "periods": [],
-          "colors": [
-            "PURPLE"
-          ],
-          "commonsDef": [],
-          "martyrology": [],
-          "titles": [],
-          "calendar": {
-            "weekOfSeason": 2,
-            "dayOfSeason": 11,
             "dayOfWeek": 3,
-            "nthDayOfWeekInMonth": 2,
-            "startOfSeason": "2025-11-30",
-            "endOfSeason": "2025-12-24",
+            "nthDayOfWeekInMonth": 3,
+            "startOfSeason": "2026-01-12",
+            "endOfSeason": "2026-11-28",
             "startOfLiturgicalYear": "2025-11-30",
             "endOfLiturgicalYear": "2026-11-28",
             "seasons": [
-              "ADVENT"
+              "ORDINARY_TIME"
             ]
           },
           "cycles": {
@@ -1276,397 +739,65 @@ A real response from the Liturgical Calendar API:
         }
       }
     ],
-    "2025-12-11": [
+    "2026-01-22": [
       {
-        "id": "advent_2_thursday",
-        "date": "2025-12-11",
-        "dateDef": {
-          "dateFn": "unprivilegedWeekdayOfAdvent",
-          "dateArgs": [
-            4,
-            2
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
+        "id": "ordinary_time_2_thursday",
         "precedence": "WEEKDAY_13",
         "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
         "isHolyDayOfObligation": false,
         "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.weekday",
-          {
-            "week": 2,
-            "dow": 4
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
         "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 12,
-          "dayOfWeek": 4,
-          "nthDayOfWeekInMonth": 2,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_2"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
+          "GREEN"
+        ]
       },
       {
-        "id": "damasus_i_pope",
-        "date": "2025-12-11",
-        "dateDef": {
-          "month": 12,
-          "date": 11
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
+        "id": "vincent_of_saragossa_deacon",
         "precedence": "OPTIONAL_MEMORIAL_12",
         "rank": "OPTIONAL_MEMORIAL",
-        "allowSimilarRankItems": false,
         "isHolyDayOfObligation": false,
         "isOptional": true,
-        "i18nDef": [
-          "names:damasus_i_pope"
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "WHITE"
-        ],
-        "commonsDef": [
-          "PopeOrBishop"
-        ],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 12,
-          "dayOfWeek": 4,
-          "nthDayOfWeekInMonth": 2,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_SAINTS",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_2"
-        },
-        "fromCalendarId": "ma",
-        "fromExtendedCalendars": [],
-        "weekday": {
-          "id": "advent_2_thursday",
-          "date": "2025-12-11",
-          "dateDef": {
-            "dateFn": "unprivilegedWeekdayOfAdvent",
-            "dateArgs": [
-              4,
-              2
-            ],
-            "yearOffset": 0
-          },
-          "dateExceptions": [],
-          "alternativeTransferDateDefs": [],
-          "precedence": "WEEKDAY_13",
-          "rank": "WEEKDAY",
-          "allowSimilarRankItems": false,
-          "isHolyDayOfObligation": false,
-          "isOptional": false,
-          "i18nDef": [
-            "seasons:advent.weekday",
-            {
-              "week": 2,
-              "dow": 4
-            }
-          ],
-          "seasons": [
-            "ADVENT"
-          ],
-          "periods": [],
-          "colors": [
-            "PURPLE"
-          ],
-          "commonsDef": [],
-          "martyrology": [],
-          "titles": [],
-          "calendar": {
-            "weekOfSeason": 2,
-            "dayOfSeason": 12,
-            "dayOfWeek": 4,
-            "nthDayOfWeekInMonth": 2,
-            "startOfSeason": "2025-11-30",
-            "endOfSeason": "2025-12-24",
-            "startOfLiturgicalYear": "2025-11-30",
-            "endOfLiturgicalYear": "2026-11-28",
-            "seasons": [
-              "ADVENT"
-            ]
-          },
-          "cycles": {
-            "properCycle": "PROPER_OF_TIME",
-            "sundayCycle": "YEAR_A",
-            "weekdayCycle": "YEAR_2",
-            "psalterWeek": "WEEK_2"
-          },
-          "fromCalendarId": "ProperOfTime",
-          "fromExtendedCalendars": []
-        }
-      }
-    ],
-    "2025-12-12": [
-      {
-        "id": "advent_2_friday",
-        "date": "2025-12-12",
-        "dateDef": {
-          "dateFn": "unprivilegedWeekdayOfAdvent",
-          "dateArgs": [
-            5,
-            2
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "WEEKDAY_13",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.weekday",
-          {
-            "week": 2,
-            "dow": 5
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 13,
-          "dayOfWeek": 5,
-          "nthDayOfWeekInMonth": 2,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_2"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      },
-      {
-        "id": "our_lady_of_guadalupe",
-        "date": "2025-12-12",
-        "dateDef": {
-          "month": 12,
-          "date": 12
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "OPTIONAL_MEMORIAL_12",
-        "rank": "OPTIONAL_MEMORIAL",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": true,
-        "i18nDef": [
-          "names:our_lady_of_guadalupe"
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "WHITE"
-        ],
-        "commonsDef": [
-          "BlessedVirginMary"
-        ],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 13,
-          "dayOfWeek": 5,
-          "nthDayOfWeekInMonth": 2,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_SAINTS",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_2"
-        },
-        "fromCalendarId": "ma",
-        "fromExtendedCalendars": [],
-        "weekday": {
-          "id": "advent_2_friday",
-          "date": "2025-12-12",
-          "dateDef": {
-            "dateFn": "unprivilegedWeekdayOfAdvent",
-            "dateArgs": [
-              5,
-              2
-            ],
-            "yearOffset": 0
-          },
-          "dateExceptions": [],
-          "alternativeTransferDateDefs": [],
-          "precedence": "WEEKDAY_13",
-          "rank": "WEEKDAY",
-          "allowSimilarRankItems": false,
-          "isHolyDayOfObligation": false,
-          "isOptional": false,
-          "i18nDef": [
-            "seasons:advent.weekday",
-            {
-              "week": 2,
-              "dow": 5
-            }
-          ],
-          "seasons": [
-            "ADVENT"
-          ],
-          "periods": [],
-          "colors": [
-            "PURPLE"
-          ],
-          "commonsDef": [],
-          "martyrology": [],
-          "titles": [],
-          "calendar": {
-            "weekOfSeason": 2,
-            "dayOfSeason": 13,
-            "dayOfWeek": 5,
-            "nthDayOfWeekInMonth": 2,
-            "startOfSeason": "2025-11-30",
-            "endOfSeason": "2025-12-24",
-            "startOfLiturgicalYear": "2025-11-30",
-            "endOfLiturgicalYear": "2026-11-28",
-            "seasons": [
-              "ADVENT"
-            ]
-          },
-          "cycles": {
-            "properCycle": "PROPER_OF_TIME",
-            "sundayCycle": "YEAR_A",
-            "weekdayCycle": "YEAR_2",
-            "psalterWeek": "WEEK_2"
-          },
-          "fromCalendarId": "ProperOfTime",
-          "fromExtendedCalendars": []
-        }
-      }
-    ],
-    "2025-12-13": [
-      {
-        "id": "lucy_of_syracuse_virgin",
-        "date": "2025-12-13",
-        "dateDef": {
-          "month": 12,
-          "date": 13
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "GENERAL_MEMORIAL_10",
-        "rank": "MEMORIAL",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "names:lucy_of_syracuse_virgin"
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
         "colors": [
           "RED"
         ],
-        "commonsDef": [
-          "VirginMartyrs",
-          "Virgins"
-        ],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 14,
-          "dayOfWeek": 6,
-          "nthDayOfWeekInMonth": 2,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_SAINTS",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_2"
-        },
-        "fromCalendarId": "ma",
-        "fromExtendedCalendars": [],
         "weekday": {
-          "id": "advent_2_saturday",
-          "date": "2025-12-13",
+          "id": "ordinary_time_2_thursday",
+          "precedence": "WEEKDAY_13",
+          "rank": "WEEKDAY",
+          "isHolyDayOfObligation": false,
+          "isOptional": false,
+          "colors": [
+            "GREEN"
+          ]
+        }
+      }
+    ],
+    "2026-01-23": [
+      {
+        "id": "ordinary_time_2_friday",
+        "precedence": "WEEKDAY_13",
+        "rank": "WEEKDAY",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "GREEN"
+        ]
+      }
+    ],
+    "2026-01-24": [
+      {
+        "id": "francis_de_sales_bishop",
+        "precedence": "GENERAL_MEMORIAL_10",
+        "rank": "MEMORIAL",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "WHITE"
+        ],
+        "weekday": {
+          "id": "ordinary_time_2_saturday",
+          "date": "2026-01-24",
           "dateDef": {
-            "dateFn": "unprivilegedWeekdayOfAdvent",
+            "dateFn": "dateOfOrdinaryTime",
             "dateArgs": [
               6,
               2
@@ -1681,33 +812,35 @@ A real response from the Liturgical Calendar API:
           "isHolyDayOfObligation": false,
           "isOptional": false,
           "i18nDef": [
-            "seasons:advent.weekday",
+            "seasons:ordinary_time.weekday",
             {
               "week": 2,
               "dow": 6
             }
           ],
           "seasons": [
-            "ADVENT"
+            "ORDINARY_TIME"
           ],
-          "periods": [],
+          "periods": [
+            "EARLY_ORDINARY_TIME"
+          ],
           "colors": [
-            "PURPLE"
+            "GREEN"
           ],
           "commonsDef": [],
           "martyrology": [],
           "titles": [],
           "calendar": {
             "weekOfSeason": 2,
-            "dayOfSeason": 14,
+            "dayOfSeason": 13,
             "dayOfWeek": 6,
-            "nthDayOfWeekInMonth": 2,
-            "startOfSeason": "2025-11-30",
-            "endOfSeason": "2025-12-24",
+            "nthDayOfWeekInMonth": 4,
+            "startOfSeason": "2026-01-12",
+            "endOfSeason": "2026-11-28",
             "startOfLiturgicalYear": "2025-11-30",
             "endOfLiturgicalYear": "2026-11-28",
             "seasons": [
-              "ADVENT"
+              "ORDINARY_TIME"
             ]
           },
           "cycles": {
@@ -1721,1474 +854,281 @@ A real response from the Liturgical Calendar API:
         }
       }
     ],
-    "2025-12-14": [
+    "2026-01-25": [
       {
-        "id": "advent_3_sunday",
-        "date": "2025-12-14",
-        "dateDef": {
-          "dateFn": "sundayOfAdvent",
-          "dateArgs": [
-            3
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "PRIVILEGED_SUNDAY_2",
+        "id": "sunday_of_the_word_of_god",
+        "precedence": "UNPRIVILEGED_SUNDAY_6",
         "rank": "SUNDAY",
-        "allowSimilarRankItems": false,
         "isHolyDayOfObligation": true,
         "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.sunday",
-          {
-            "week": 3
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
         "colors": [
-          "ROSE",
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 3,
-          "dayOfSeason": 15,
-          "dayOfWeek": 0,
-          "nthDayOfWeekInMonth": 2,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_3"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
+          "GREEN"
+        ]
       }
     ],
-    "2025-12-15": [
+    "2026-01-26": [
       {
-        "id": "advent_3_monday",
-        "date": "2025-12-15",
-        "dateDef": {
-          "dateFn": "unprivilegedWeekdayOfAdvent",
-          "dateArgs": [
-            1,
-            3
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "WEEKDAY_13",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
+        "id": "timothy_of_ephesus_and_titus_of_crete_bishops",
+        "precedence": "GENERAL_MEMORIAL_10",
+        "rank": "MEMORIAL",
         "isHolyDayOfObligation": false,
         "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.weekday",
-          {
-            "week": 3,
-            "dow": 1
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 3,
-          "dayOfSeason": 16,
-          "dayOfWeek": 1,
-          "nthDayOfWeekInMonth": 3,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_3"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      }
-    ],
-    "2025-12-16": [
-      {
-        "id": "advent_3_tuesday",
-        "date": "2025-12-16",
-        "dateDef": {
-          "dateFn": "unprivilegedWeekdayOfAdvent",
-          "dateArgs": [
-            2,
-            3
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "WEEKDAY_13",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.weekday",
-          {
-            "week": 3,
-            "dow": 2
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 3,
-          "dayOfSeason": 17,
-          "dayOfWeek": 2,
-          "nthDayOfWeekInMonth": 3,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_3"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      }
-    ],
-    "2025-12-17": [
-      {
-        "id": "advent_december_17",
-        "date": "2025-12-17",
-        "dateDef": {
-          "dateFn": "privilegedWeekdayOfAdvent",
-          "dateArgs": [
-            17
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "PRIVILEGED_WEEKDAY_9",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.privileged_weekday",
-          {
-            "day": 17
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 3,
-          "dayOfSeason": 18,
-          "dayOfWeek": 3,
-          "nthDayOfWeekInMonth": 3,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_3"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      }
-    ],
-    "2025-12-18": [
-      {
-        "id": "advent_december_18",
-        "date": "2025-12-18",
-        "dateDef": {
-          "dateFn": "privilegedWeekdayOfAdvent",
-          "dateArgs": [
-            18
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "PRIVILEGED_WEEKDAY_9",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.privileged_weekday",
-          {
-            "day": 18
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 3,
-          "dayOfSeason": 19,
-          "dayOfWeek": 4,
-          "nthDayOfWeekInMonth": 3,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_3"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      }
-    ],
-    "2025-12-19": [
-      {
-        "id": "advent_december_19",
-        "date": "2025-12-19",
-        "dateDef": {
-          "dateFn": "privilegedWeekdayOfAdvent",
-          "dateArgs": [
-            19
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "PRIVILEGED_WEEKDAY_9",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.privileged_weekday",
-          {
-            "day": 19
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 3,
-          "dayOfSeason": 20,
-          "dayOfWeek": 5,
-          "nthDayOfWeekInMonth": 3,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_3"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      }
-    ],
-    "2025-12-20": [
-      {
-        "id": "advent_december_20",
-        "date": "2025-12-20",
-        "dateDef": {
-          "dateFn": "privilegedWeekdayOfAdvent",
-          "dateArgs": [
-            20
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "PRIVILEGED_WEEKDAY_9",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.privileged_weekday",
-          {
-            "day": 20
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 3,
-          "dayOfSeason": 21,
-          "dayOfWeek": 6,
-          "nthDayOfWeekInMonth": 3,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_3"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      }
-    ],
-    "2025-12-21": [
-      {
-        "id": "advent_4_sunday",
-        "date": "2025-12-21",
-        "dateDef": {
-          "dateFn": "sundayOfAdvent",
-          "dateArgs": [
-            4
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "PRIVILEGED_SUNDAY_2",
-        "rank": "SUNDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": true,
-        "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.sunday",
-          {
-            "week": 4
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 4,
-          "dayOfSeason": 22,
-          "dayOfWeek": 0,
-          "nthDayOfWeekInMonth": 3,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_4"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      }
-    ],
-    "2025-12-22": [
-      {
-        "id": "advent_december_22",
-        "date": "2025-12-22",
-        "dateDef": {
-          "dateFn": "privilegedWeekdayOfAdvent",
-          "dateArgs": [
-            22
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "PRIVILEGED_WEEKDAY_9",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.privileged_weekday",
-          {
-            "day": 22
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 4,
-          "dayOfSeason": 23,
-          "dayOfWeek": 1,
-          "nthDayOfWeekInMonth": 4,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_4"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      }
-    ],
-    "2025-12-23": [
-      {
-        "id": "advent_december_23",
-        "date": "2025-12-23",
-        "dateDef": {
-          "dateFn": "privilegedWeekdayOfAdvent",
-          "dateArgs": [
-            23
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "PRIVILEGED_WEEKDAY_9",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.privileged_weekday",
-          {
-            "day": 23
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 4,
-          "dayOfSeason": 24,
-          "dayOfWeek": 2,
-          "nthDayOfWeekInMonth": 4,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_4"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      },
-      {
-        "id": "john_of_kanty_priest",
-        "date": "2025-12-23",
-        "dateDef": {
-          "month": 12,
-          "date": 23
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "OPTIONAL_MEMORIAL_12",
-        "rank": "OPTIONAL_MEMORIAL",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": true,
-        "i18nDef": [
-          "names:john_of_kanty_priest"
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [],
-        "commonsDef": [
-          "Pastors",
-          "MercyWorkers"
-        ],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 4,
-          "dayOfSeason": 24,
-          "dayOfWeek": 2,
-          "nthDayOfWeekInMonth": 4,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_SAINTS",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_4"
-        },
-        "fromCalendarId": "ma",
-        "fromExtendedCalendars": [],
-        "weekday": {
-          "id": "advent_december_23",
-          "date": "2025-12-23",
-          "dateDef": {
-            "dateFn": "privilegedWeekdayOfAdvent",
-            "dateArgs": [
-              23
-            ],
-            "yearOffset": 0
-          },
-          "dateExceptions": [],
-          "alternativeTransferDateDefs": [],
-          "precedence": "PRIVILEGED_WEEKDAY_9",
-          "rank": "WEEKDAY",
-          "allowSimilarRankItems": false,
-          "isHolyDayOfObligation": false,
-          "isOptional": false,
-          "i18nDef": [
-            "seasons:advent.privileged_weekday",
-            {
-              "day": 23
-            }
-          ],
-          "seasons": [
-            "ADVENT"
-          ],
-          "periods": [],
-          "colors": [
-            "PURPLE"
-          ],
-          "commonsDef": [],
-          "martyrology": [],
-          "titles": [],
-          "calendar": {
-            "weekOfSeason": 4,
-            "dayOfSeason": 24,
-            "dayOfWeek": 2,
-            "nthDayOfWeekInMonth": 4,
-            "startOfSeason": "2025-11-30",
-            "endOfSeason": "2025-12-24",
-            "startOfLiturgicalYear": "2025-11-30",
-            "endOfLiturgicalYear": "2026-11-28",
-            "seasons": [
-              "ADVENT"
-            ]
-          },
-          "cycles": {
-            "properCycle": "PROPER_OF_TIME",
-            "sundayCycle": "YEAR_A",
-            "weekdayCycle": "YEAR_2",
-            "psalterWeek": "WEEK_4"
-          },
-          "fromCalendarId": "ProperOfTime",
-          "fromExtendedCalendars": []
-        }
-      }
-    ],
-    "2025-12-24": [
-      {
-        "id": "advent_december_24",
-        "date": "2025-12-24",
-        "dateDef": {
-          "dateFn": "privilegedWeekdayOfAdvent",
-          "dateArgs": [
-            24
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "PRIVILEGED_WEEKDAY_9",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "seasons:advent.privileged_weekday",
-          {
-            "day": 24
-          }
-        ],
-        "seasons": [
-          "ADVENT"
-        ],
-        "periods": [],
-        "colors": [
-          "PURPLE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 4,
-          "dayOfSeason": 25,
-          "dayOfWeek": 3,
-          "nthDayOfWeekInMonth": 4,
-          "startOfSeason": "2025-11-30",
-          "endOfSeason": "2025-12-24",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "ADVENT"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_4"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      }
-    ],
-    "2025-12-25": [
-      {
-        "id": "nativity_of_the_lord",
-        "date": "2025-12-25",
-        "dateDef": {
-          "dateFn": "christmas",
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "PROPER_OF_TIME_SOLEMNITY_2",
-        "rank": "SOLEMNITY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": true,
-        "isOptional": false,
-        "i18nDef": [
-          "names:nativity_of_the_lord"
-        ],
-        "seasons": [
-          "CHRISTMAS_TIME"
-        ],
-        "periods": [
-          "CHRISTMAS_OCTAVE",
-          "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD"
-        ],
         "colors": [
           "WHITE"
         ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 1,
-          "dayOfSeason": 1,
-          "dayOfWeek": 4,
-          "nthDayOfWeekInMonth": 4,
-          "startOfSeason": "2025-12-25",
-          "endOfSeason": "2026-01-11",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "CHRISTMAS_TIME"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_4"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      }
-    ],
-    "2025-12-26": [
-      {
-        "id": "stephen_the_first_martyr",
-        "date": "2025-12-26",
-        "dateDef": {
-          "month": 12,
-          "date": 26
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "GENERAL_FEAST_7",
-        "rank": "FEAST",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "names:stephen_the_first_martyr"
-        ],
-        "seasons": [
-          "CHRISTMAS_TIME"
-        ],
-        "periods": [
-          "CHRISTMAS_OCTAVE",
-          "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD"
-        ],
-        "colors": [
-          "RED"
-        ],
-        "commonsDef": [
-          "None"
-        ],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 1,
-          "dayOfSeason": 2,
-          "dayOfWeek": 5,
-          "nthDayOfWeekInMonth": 4,
-          "startOfSeason": "2025-12-25",
-          "endOfSeason": "2026-01-11",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "CHRISTMAS_TIME"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_SAINTS",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_4"
-        },
-        "fromCalendarId": "ma",
-        "fromExtendedCalendars": [],
         "weekday": {
-          "id": "christmas_octave_day_2",
-          "date": "2025-12-26",
+          "id": "ordinary_time_3_monday",
+          "date": "2026-01-26",
           "dateDef": {
-            "dateFn": "weekdayWithinOctaveOfChristmas",
+            "dateFn": "dateOfOrdinaryTime",
             "dateArgs": [
-              2
-            ],
-            "yearOffset": 0
-          },
-          "dateExceptions": [],
-          "alternativeTransferDateDefs": [],
-          "precedence": "PRIVILEGED_WEEKDAY_9",
-          "rank": "WEEKDAY",
-          "allowSimilarRankItems": false,
-          "isHolyDayOfObligation": false,
-          "isOptional": false,
-          "i18nDef": [
-            "seasons:christmas_time.octave",
-            {
-              "count": 2
-            }
-          ],
-          "seasons": [
-            "CHRISTMAS_TIME"
-          ],
-          "periods": [
-            "CHRISTMAS_OCTAVE",
-            "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD"
-          ],
-          "colors": [
-            "WHITE"
-          ],
-          "commonsDef": [],
-          "martyrology": [],
-          "titles": [],
-          "calendar": {
-            "weekOfSeason": 1,
-            "dayOfSeason": 2,
-            "dayOfWeek": 5,
-            "nthDayOfWeekInMonth": 4,
-            "startOfSeason": "2025-12-25",
-            "endOfSeason": "2026-01-11",
-            "startOfLiturgicalYear": "2025-11-30",
-            "endOfLiturgicalYear": "2026-11-28",
-            "seasons": [
-              "CHRISTMAS_TIME"
-            ]
-          },
-          "cycles": {
-            "properCycle": "PROPER_OF_TIME",
-            "sundayCycle": "YEAR_A",
-            "weekdayCycle": "YEAR_2",
-            "psalterWeek": "WEEK_4"
-          },
-          "fromCalendarId": "ProperOfTime",
-          "fromExtendedCalendars": []
-        }
-      }
-    ],
-    "2025-12-27": [
-      {
-        "id": "john_apostle",
-        "date": "2025-12-27",
-        "dateDef": {
-          "month": 12,
-          "date": 27
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "GENERAL_FEAST_7",
-        "rank": "FEAST",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "names:john_apostle"
-        ],
-        "seasons": [
-          "CHRISTMAS_TIME"
-        ],
-        "periods": [
-          "CHRISTMAS_OCTAVE",
-          "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD"
-        ],
-        "colors": [
-          "WHITE"
-        ],
-        "commonsDef": [
-          "None"
-        ],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 1,
-          "dayOfSeason": 3,
-          "dayOfWeek": 6,
-          "nthDayOfWeekInMonth": 4,
-          "startOfSeason": "2025-12-25",
-          "endOfSeason": "2026-01-11",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "CHRISTMAS_TIME"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_SAINTS",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_4"
-        },
-        "fromCalendarId": "ma",
-        "fromExtendedCalendars": [],
-        "weekday": {
-          "id": "christmas_octave_day_3",
-          "date": "2025-12-27",
-          "dateDef": {
-            "dateFn": "weekdayWithinOctaveOfChristmas",
-            "dateArgs": [
+              1,
               3
             ],
             "yearOffset": 0
           },
           "dateExceptions": [],
           "alternativeTransferDateDefs": [],
-          "precedence": "PRIVILEGED_WEEKDAY_9",
+          "precedence": "WEEKDAY_13",
           "rank": "WEEKDAY",
           "allowSimilarRankItems": false,
           "isHolyDayOfObligation": false,
           "isOptional": false,
           "i18nDef": [
-            "seasons:christmas_time.octave",
+            "seasons:ordinary_time.weekday",
             {
-              "count": 3
+              "week": 3,
+              "dow": 1
             }
           ],
           "seasons": [
-            "CHRISTMAS_TIME"
+            "ORDINARY_TIME"
           ],
           "periods": [
-            "CHRISTMAS_OCTAVE",
-            "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD"
+            "EARLY_ORDINARY_TIME"
           ],
           "colors": [
-            "WHITE"
+            "GREEN"
           ],
           "commonsDef": [],
           "martyrology": [],
           "titles": [],
           "calendar": {
-            "weekOfSeason": 1,
-            "dayOfSeason": 3,
-            "dayOfWeek": 6,
-            "nthDayOfWeekInMonth": 4,
-            "startOfSeason": "2025-12-25",
-            "endOfSeason": "2026-01-11",
-            "startOfLiturgicalYear": "2025-11-30",
-            "endOfLiturgicalYear": "2026-11-28",
-            "seasons": [
-              "CHRISTMAS_TIME"
-            ]
-          },
-          "cycles": {
-            "properCycle": "PROPER_OF_TIME",
-            "sundayCycle": "YEAR_A",
-            "weekdayCycle": "YEAR_2",
-            "psalterWeek": "WEEK_4"
-          },
-          "fromCalendarId": "ProperOfTime",
-          "fromExtendedCalendars": []
-        }
-      }
-    ],
-    "2025-12-28": [
-      {
-        "id": "holy_family_of_jesus_mary_and_joseph",
-        "date": "2025-12-28",
-        "dateDef": {
-          "dateFn": "holyFamily",
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "GENERAL_LORD_FEAST_5",
-        "rank": "FEAST",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": true,
-        "isOptional": false,
-        "i18nDef": [
-          "names:holy_family_of_jesus_mary_and_joseph"
-        ],
-        "seasons": [
-          "CHRISTMAS_TIME"
-        ],
-        "periods": [
-          "CHRISTMAS_OCTAVE",
-          "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD"
-        ],
-        "colors": [
-          "WHITE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 4,
-          "dayOfWeek": 0,
-          "nthDayOfWeekInMonth": 4,
-          "startOfSeason": "2025-12-25",
-          "endOfSeason": "2026-01-11",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "CHRISTMAS_TIME"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_1"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      }
-    ],
-    "2025-12-29": [
-      {
-        "id": "christmas_octave_day_5",
-        "date": "2025-12-29",
-        "dateDef": {
-          "dateFn": "weekdayWithinOctaveOfChristmas",
-          "dateArgs": [
-            5
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "PRIVILEGED_WEEKDAY_9",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "seasons:christmas_time.octave",
-          {
-            "count": 5
-          }
-        ],
-        "seasons": [
-          "CHRISTMAS_TIME"
-        ],
-        "periods": [
-          "CHRISTMAS_OCTAVE",
-          "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD"
-        ],
-        "colors": [
-          "WHITE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 5,
-          "dayOfWeek": 1,
-          "nthDayOfWeekInMonth": 5,
-          "startOfSeason": "2025-12-25",
-          "endOfSeason": "2026-01-11",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "CHRISTMAS_TIME"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_1"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      },
-      {
-        "id": "thomas_becket_bishop",
-        "date": "2025-12-29",
-        "dateDef": {
-          "month": 12,
-          "date": 29
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "OPTIONAL_MEMORIAL_12",
-        "rank": "OPTIONAL_MEMORIAL",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": true,
-        "i18nDef": [
-          "names:thomas_becket_bishop"
-        ],
-        "seasons": [
-          "CHRISTMAS_TIME"
-        ],
-        "periods": [
-          "CHRISTMAS_OCTAVE",
-          "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD"
-        ],
-        "colors": [],
-        "commonsDef": [
-          "Martyrs",
-          "Bishops"
-        ],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 5,
-          "dayOfWeek": 1,
-          "nthDayOfWeekInMonth": 5,
-          "startOfSeason": "2025-12-25",
-          "endOfSeason": "2026-01-11",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "CHRISTMAS_TIME"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_SAINTS",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_1"
-        },
-        "fromCalendarId": "ma",
-        "fromExtendedCalendars": [],
-        "weekday": {
-          "id": "christmas_octave_day_5",
-          "date": "2025-12-29",
-          "dateDef": {
-            "dateFn": "weekdayWithinOctaveOfChristmas",
-            "dateArgs": [
-              5
-            ],
-            "yearOffset": 0
-          },
-          "dateExceptions": [],
-          "alternativeTransferDateDefs": [],
-          "precedence": "PRIVILEGED_WEEKDAY_9",
-          "rank": "WEEKDAY",
-          "allowSimilarRankItems": false,
-          "isHolyDayOfObligation": false,
-          "isOptional": false,
-          "i18nDef": [
-            "seasons:christmas_time.octave",
-            {
-              "count": 5
-            }
-          ],
-          "seasons": [
-            "CHRISTMAS_TIME"
-          ],
-          "periods": [
-            "CHRISTMAS_OCTAVE",
-            "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD"
-          ],
-          "colors": [
-            "WHITE"
-          ],
-          "commonsDef": [],
-          "martyrology": [],
-          "titles": [],
-          "calendar": {
-            "weekOfSeason": 2,
-            "dayOfSeason": 5,
+            "weekOfSeason": 3,
+            "dayOfSeason": 15,
             "dayOfWeek": 1,
-            "nthDayOfWeekInMonth": 5,
-            "startOfSeason": "2025-12-25",
-            "endOfSeason": "2026-01-11",
+            "nthDayOfWeekInMonth": 4,
+            "startOfSeason": "2026-01-12",
+            "endOfSeason": "2026-11-28",
             "startOfLiturgicalYear": "2025-11-30",
             "endOfLiturgicalYear": "2026-11-28",
             "seasons": [
-              "CHRISTMAS_TIME"
+              "ORDINARY_TIME"
             ]
           },
           "cycles": {
             "properCycle": "PROPER_OF_TIME",
             "sundayCycle": "YEAR_A",
             "weekdayCycle": "YEAR_2",
-            "psalterWeek": "WEEK_1"
+            "psalterWeek": "WEEK_3"
           },
           "fromCalendarId": "ProperOfTime",
           "fromExtendedCalendars": []
         }
       }
     ],
-    "2025-12-30": [
+    "2026-01-27": [
       {
-        "id": "christmas_octave_day_6",
-        "date": "2025-12-30",
-        "dateDef": {
-          "dateFn": "weekdayWithinOctaveOfChristmas",
-          "dateArgs": [
-            6
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "PRIVILEGED_WEEKDAY_9",
+        "id": "ordinary_time_3_tuesday",
+        "precedence": "WEEKDAY_13",
         "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
         "isHolyDayOfObligation": false,
         "isOptional": false,
-        "i18nDef": [
-          "seasons:christmas_time.octave",
-          {
-            "count": 6
-          }
-        ],
-        "seasons": [
-          "CHRISTMAS_TIME"
-        ],
-        "periods": [
-          "CHRISTMAS_OCTAVE",
-          "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD"
-        ],
         "colors": [
-          "WHITE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 6,
-          "dayOfWeek": 2,
-          "nthDayOfWeekInMonth": 5,
-          "startOfSeason": "2025-12-25",
-          "endOfSeason": "2026-01-11",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "CHRISTMAS_TIME"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_1"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
-      }
-    ],
-    "2025-12-31": [
-      {
-        "id": "christmas_octave_day_7",
-        "date": "2025-12-31",
-        "dateDef": {
-          "dateFn": "weekdayWithinOctaveOfChristmas",
-          "dateArgs": [
-            7
-          ],
-          "yearOffset": 0
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
-        "precedence": "PRIVILEGED_WEEKDAY_9",
-        "rank": "WEEKDAY",
-        "allowSimilarRankItems": false,
-        "isHolyDayOfObligation": false,
-        "isOptional": false,
-        "i18nDef": [
-          "seasons:christmas_time.octave",
-          {
-            "count": 7
-          }
-        ],
-        "seasons": [
-          "CHRISTMAS_TIME"
-        ],
-        "periods": [
-          "CHRISTMAS_OCTAVE",
-          "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD"
-        ],
-        "colors": [
-          "WHITE"
-        ],
-        "commonsDef": [],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 7,
-          "dayOfWeek": 3,
-          "nthDayOfWeekInMonth": 5,
-          "startOfSeason": "2025-12-25",
-          "endOfSeason": "2026-01-11",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "CHRISTMAS_TIME"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_TIME",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_1"
-        },
-        "fromCalendarId": "ProperOfTime",
-        "fromExtendedCalendars": []
+          "GREEN"
+        ]
       },
       {
-        "id": "sylvester_i_pope",
-        "date": "2025-12-31",
-        "dateDef": {
-          "month": 12,
-          "date": 31
-        },
-        "dateExceptions": [],
-        "alternativeTransferDateDefs": [],
+        "id": "angela_merici_virgin",
         "precedence": "OPTIONAL_MEMORIAL_12",
         "rank": "OPTIONAL_MEMORIAL",
-        "allowSimilarRankItems": false,
         "isHolyDayOfObligation": false,
         "isOptional": true,
-        "i18nDef": [
-          "names:sylvester_i_pope"
+        "colors": [
+          "WHITE"
         ],
-        "seasons": [
-          "CHRISTMAS_TIME"
-        ],
-        "periods": [
-          "CHRISTMAS_OCTAVE",
-          "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD"
-        ],
-        "colors": [],
-        "commonsDef": [
-          "PopeOrBishop"
-        ],
-        "martyrology": [],
-        "titles": [],
-        "calendar": {
-          "weekOfSeason": 2,
-          "dayOfSeason": 7,
-          "dayOfWeek": 3,
-          "nthDayOfWeekInMonth": 5,
-          "startOfSeason": "2025-12-25",
-          "endOfSeason": "2026-01-11",
-          "startOfLiturgicalYear": "2025-11-30",
-          "endOfLiturgicalYear": "2026-11-28",
-          "seasons": [
-            "CHRISTMAS_TIME"
-          ]
-        },
-        "cycles": {
-          "properCycle": "PROPER_OF_SAINTS",
-          "sundayCycle": "YEAR_A",
-          "weekdayCycle": "YEAR_2",
-          "psalterWeek": "WEEK_1"
-        },
-        "fromCalendarId": "ma",
-        "fromExtendedCalendars": [],
         "weekday": {
-          "id": "christmas_octave_day_7",
-          "date": "2025-12-31",
+          "id": "ordinary_time_3_tuesday",
+          "precedence": "WEEKDAY_13",
+          "rank": "WEEKDAY",
+          "isHolyDayOfObligation": false,
+          "isOptional": false,
+          "colors": [
+            "GREEN"
+          ]
+        }
+      }
+    ],
+    "2026-01-28": [
+      {
+        "id": "thomas_aquinas_priest",
+        "precedence": "GENERAL_MEMORIAL_10",
+        "rank": "MEMORIAL",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "WHITE"
+        ],
+        "weekday": {
+          "id": "ordinary_time_3_wednesday",
+          "date": "2026-01-28",
           "dateDef": {
-            "dateFn": "weekdayWithinOctaveOfChristmas",
+            "dateFn": "dateOfOrdinaryTime",
             "dateArgs": [
-              7
+              3,
+              3
             ],
             "yearOffset": 0
           },
           "dateExceptions": [],
           "alternativeTransferDateDefs": [],
-          "precedence": "PRIVILEGED_WEEKDAY_9",
+          "precedence": "WEEKDAY_13",
           "rank": "WEEKDAY",
           "allowSimilarRankItems": false,
           "isHolyDayOfObligation": false,
           "isOptional": false,
           "i18nDef": [
-            "seasons:christmas_time.octave",
+            "seasons:ordinary_time.weekday",
             {
-              "count": 7
+              "week": 3,
+              "dow": 3
             }
           ],
           "seasons": [
-            "CHRISTMAS_TIME"
+            "ORDINARY_TIME"
           ],
           "periods": [
-            "CHRISTMAS_OCTAVE",
-            "CHRISTMAS_TO_PRESENTATION_OF_THE_LORD"
+            "EARLY_ORDINARY_TIME"
           ],
           "colors": [
-            "WHITE"
+            "GREEN"
           ],
           "commonsDef": [],
           "martyrology": [],
           "titles": [],
           "calendar": {
-            "weekOfSeason": 2,
-            "dayOfSeason": 7,
+            "weekOfSeason": 3,
+            "dayOfSeason": 17,
             "dayOfWeek": 3,
-            "nthDayOfWeekInMonth": 5,
-            "startOfSeason": "2025-12-25",
-            "endOfSeason": "2026-01-11",
+            "nthDayOfWeekInMonth": 4,
+            "startOfSeason": "2026-01-12",
+            "endOfSeason": "2026-11-28",
             "startOfLiturgicalYear": "2025-11-30",
             "endOfLiturgicalYear": "2026-11-28",
             "seasons": [
-              "CHRISTMAS_TIME"
+              "ORDINARY_TIME"
             ]
           },
           "cycles": {
             "properCycle": "PROPER_OF_TIME",
             "sundayCycle": "YEAR_A",
             "weekdayCycle": "YEAR_2",
-            "psalterWeek": "WEEK_1"
+            "psalterWeek": "WEEK_3"
+          },
+          "fromCalendarId": "ProperOfTime",
+          "fromExtendedCalendars": []
+        }
+      }
+    ],
+    "2026-01-29": [
+      {
+        "id": "ordinary_time_3_thursday",
+        "precedence": "WEEKDAY_13",
+        "rank": "WEEKDAY",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "GREEN"
+        ]
+      }
+    ],
+    "2026-01-30": [
+      {
+        "id": "ordinary_time_3_friday",
+        "precedence": "WEEKDAY_13",
+        "rank": "WEEKDAY",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "GREEN"
+        ]
+      }
+    ],
+    "2026-01-31": [
+      {
+        "id": "john_bosco_priest",
+        "precedence": "GENERAL_MEMORIAL_10",
+        "rank": "MEMORIAL",
+        "isHolyDayOfObligation": false,
+        "isOptional": false,
+        "colors": [
+          "WHITE"
+        ],
+        "weekday": {
+          "id": "ordinary_time_3_saturday",
+          "date": "2026-01-31",
+          "dateDef": {
+            "dateFn": "dateOfOrdinaryTime",
+            "dateArgs": [
+              6,
+              3
+            ],
+            "yearOffset": 0
+          },
+          "dateExceptions": [],
+          "alternativeTransferDateDefs": [],
+          "precedence": "WEEKDAY_13",
+          "rank": "WEEKDAY",
+          "allowSimilarRankItems": false,
+          "isHolyDayOfObligation": false,
+          "isOptional": false,
+          "i18nDef": [
+            "seasons:ordinary_time.weekday",
+            {
+              "week": 3,
+              "dow": 6
+            }
+          ],
+          "seasons": [
+            "ORDINARY_TIME"
+          ],
+          "periods": [
+            "EARLY_ORDINARY_TIME"
+          ],
+          "colors": [
+            "GREEN"
+          ],
+          "commonsDef": [],
+          "martyrology": [],
+          "titles": [],
+          "calendar": {
+            "weekOfSeason": 3,
+            "dayOfSeason": 20,
+            "dayOfWeek": 6,
+            "nthDayOfWeekInMonth": 5,
+            "startOfSeason": "2026-01-12",
+            "endOfSeason": "2026-11-28",
+            "startOfLiturgicalYear": "2025-11-30",
+            "endOfLiturgicalYear": "2026-11-28",
+            "seasons": [
+              "ORDINARY_TIME"
+            ]
+          },
+          "cycles": {
+            "properCycle": "PROPER_OF_TIME",
+            "sundayCycle": "YEAR_A",
+            "weekdayCycle": "YEAR_2",
+            "psalterWeek": "WEEK_3"
           },
           "fromCalendarId": "ProperOfTime",
           "fromExtendedCalendars": []
@@ -3203,7 +1143,7 @@ A real response from the Liturgical Calendar API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Liturgical Calendar API](https://apiverve.com/marketplace/liturgicalcalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Liturgical Calendar API](https://apiverve.com/marketplace/liturgicalcalendar?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
