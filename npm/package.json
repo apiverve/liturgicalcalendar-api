@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/liturgicalcalendar",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Liturgical Calendar retrieves Catholic liturgical calendar events for any given month. It details feast ranks, vestment colors, liturgical seasons, and holy days of obligation, while paid plans add custom year queries.",
   "main": "index.js",
   "types": "index.d.ts",
