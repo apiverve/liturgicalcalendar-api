@@ -1,0 +1,16 @@
+name: apiverve_liturgicalcalendar
+description: "Liturgical Calendar retrieves Catholic liturgical calendar events for any given month. It details feast ranks, vestment colors, liturgical seasons, and holy days of obligation, while paid plans add custom year queries."
+version: 1.2.5
+homepage: https://apiverve.com/marketplace/liturgicalcalendar?utm_source=dart&utm_medium=referral&utm_content=homepage
+repository: https://github.com/apiverve/liturgicalcalendar-api/tree/main/dart
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  http: ^1.1.0
+  http_parser: ^4.0.0
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
